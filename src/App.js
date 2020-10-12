@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
 import ContactMe from "./components/contact/ContactMe";
 import Skills from "./components/skills/Skills";
+import Education from "./components/education/Education";
 
 class App extends React.Component {
     render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
                 <AboutMe />
                 <Skills />
                 <Projects />
+                <Education />
                 <Experience />
                 <ContactMe />
             </div>

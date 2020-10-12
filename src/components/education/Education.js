@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-class Experience extends React.Component {
+class Education extends React.Component {
     render() {
         return (
             <div>
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Experience</p>
+                            <p className="display-4">Education</p>
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
@@ -27,7 +27,8 @@ class Experience extends React.Component {
 const styles = {
     container: {
         // padding: "21.13%",
+        backgroundColor: "#eee",
     },
 };
 
-export default Experience;
+export default Education;
