@@ -6,9 +6,10 @@ class Navigation extends React.Component {
     render() {
         return (
             <Navbar
-                bg="secondary"
+                style={styles.navbar}
                 variant="dark"
                 className="justify-content-md-center"
+                sticky="top"
             >
                 <Nav>
                     <Nav.Link>About</Nav.Link>
@@ -28,5 +29,7 @@ class Navigation extends React.Component {
         );
     }
 }
+
+const styles = { navbar: { backgroundColor: "#39689b" } };
 
 export default Navigation;

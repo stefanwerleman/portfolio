@@ -1,14 +1,15 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import "./Front.css";
 
 class Front extends React.Component {
     render() {
         return (
-            <div style={styles.front}>
+            <div className="Front" style={styles.front}>
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h1 className="display-4">
+                            <h1 className="display-3">
                                 <strong>STEFAN WERLEMAN</strong>
                             </h1>
                         </Col>
@@ -16,13 +17,13 @@ class Front extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h6>
-                                ______________________________________________________________________
+                                __________________________________________________________________________
                             </h6>
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h5>COMPUTER SCIENCE STUDENT AT UCF</h5>
+                            <h4>COMPUTER SCIENCE STUDENT AT UCF</h4>
                         </Col>
                     </Row>
                 </Container>
@@ -36,8 +37,9 @@ const styles = {
         color: "white",
     },
     container: {
-        backgroundColor: "#6c757d",
-        padding: "17.28%",
+        backgroundColor: "#39689b",
+        opacity: 0.8,
+        padding: "16.68%",
     },
 };
 
