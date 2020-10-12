@@ -1,13 +1,14 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Navigation from "./components/navigation/Navigation";
-// Special orange color #ef6b74
+import Front from "./components/front/Front";
+
 class App extends React.Component {
     render() {
         return (
-            <Container>
+            <div>
+                <Front />
                 <Navigation />
-            </Container>
+            </div>
         );
     }
 }
