@@ -1,18 +1,18 @@
 import React from "react";
-import "./App.css";
-
 import Navigation from "./components/navigation/Navigation";
-import Main from "./components/main/Main";
+import { Container } from "semantic-ui-react";
 
+// Special orange color #ef6b74
 class App extends React.Component {
     render() {
         return (
-            <div className="App">
+            <Container style={styles.container}>
                 <Navigation />
-                <Main />
-            </div>
+            </Container>
         );
     }
 }
+
+const styles = { container: { width: "100%" } };
 
 export default App;

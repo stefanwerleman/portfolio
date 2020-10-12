@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Menu } from "semantic-ui-react";
+import { Button, Menu, Segment } from "semantic-ui-react";
 import Resume from "./Resume.pdf";
 
 class Navigation extends React.Component {
@@ -25,34 +25,38 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <Menu borderless>
-                <Menu.Menu>
-                    <Menu.Item onClick={this.handleHomeButton}>
-                        {"<Stefan Werleman />"}
-                    </Menu.Item>
-                </Menu.Menu>
-                <Menu.Menu position="right">
-                    <Menu.Item onClick={this.handleAboutMe}>
-                        1. About Me
-                    </Menu.Item>
-                    <Menu.Item onClick={this.handleProjects}>
-                        2. Projects
-                    </Menu.Item>
-                    <Menu.Item onClick={this.handleExperience}>
-                        3. Experience
-                    </Menu.Item>
-                    <Menu.Item onClick={this.handleContactMe}>
-                        4. Contact Me
-                    </Menu.Item>
-                    <Menu.Item>
-                        <Button href={Resume} target="_blank">
-                            Resume
-                        </Button>
-                    </Menu.Item>
-                </Menu.Menu>
-            </Menu>
+            <Segment style={styles.menu} inverted secondary>
+                <Menu inverted secondary>
+                    <Menu.Menu>
+                        <Menu.Item onClick={this.handleHomeButton}>
+                            {"<Stefan Werleman />"}
+                        </Menu.Item>
+                    </Menu.Menu>
+                    <Menu.Menu position="right">
+                        <Menu.Item onClick={this.handleAboutMe}>
+                            1. About Me
+                        </Menu.Item>
+                        <Menu.Item onClick={this.handleProjects}>
+                            2. Projects
+                        </Menu.Item>
+                        <Menu.Item onClick={this.handleExperience}>
+                            3. Experience
+                        </Menu.Item>
+                        <Menu.Item onClick={this.handleContactMe}>
+                            4. Contact Me
+                        </Menu.Item>
+                        <Menu.Item>
+                            <Button href={Resume} target="_blank">
+                                Resume
+                            </Button>
+                        </Menu.Item>
+                    </Menu.Menu>
+                </Menu>
+            </Segment>
         );
     }
 }
+
+const styles = { menu: { background: " #0a192f" } };
 
 export default Navigation;
