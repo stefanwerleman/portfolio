@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 class AboutMe extends React.Component {
     render() {
@@ -17,6 +17,9 @@ class AboutMe extends React.Component {
                                 _______________________________________________
                             </p>
                         </Col>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        <Image src="profile-pic.png" alt="Pic"></Image>
                     </Row>
                 </Container>
             </div>
