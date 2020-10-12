@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Menu, Segment } from "semantic-ui-react";
+import { Button, Menu } from "semantic-ui-react";
 import Resume from "./Resume.pdf";
 
 class Navigation extends React.Component {
@@ -25,7 +25,7 @@ class Navigation extends React.Component {
 
     render() {
         return (
-            <Menu size="large" inverted secondary>
+            <Menu size="large" inverted secondary fixed>
                 <Menu.Menu>
                     <Menu.Item onClick={this.handleHomeButton}>
                         {"<Stefan Werleman />"}
@@ -59,7 +59,5 @@ class Navigation extends React.Component {
         );
     }
 }
-
-const styles = { menu: { background: " #0a192f" } };
 
 export default Navigation;
