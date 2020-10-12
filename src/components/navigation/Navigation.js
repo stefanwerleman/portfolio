@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Menu } from "semantic-ui-react";
+import Resume from "./Resume.pdf";
 
 class Navigation extends React.Component {
     render() {
@@ -14,7 +15,9 @@ class Navigation extends React.Component {
                     <Menu.Item>3. Experience</Menu.Item>
                     <Menu.Item>4. Contact Me</Menu.Item>
                     <Menu.Item>
-                        <Button>Resume</Button>
+                        <Button href={Resume} target="_blank">
+                            Resume
+                        </Button>
                     </Menu.Item>
                 </Menu.Menu>
             </Menu>
