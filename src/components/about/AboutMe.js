@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image, Button } from "react-bootstrap";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -51,25 +51,36 @@ class AboutMe extends React.Component {
                                 detail-oriented individual that always strives
                                 <br />
                                 for success. I hope to bring these qualities to
-                                an internship. If you are interested, you can
-                                view <br />
-                                some of my{" "}
+                                an internship.
+                                <br />
+                                <br />
+                                If you are interested, you can view some of my{" "}
                                 <strong>
                                     <a href="#">projects</a>
                                 </strong>{" "}
-                                in down below.
-                                <br />
-                                <br />
-                                Feel free to reach out to me on LinkedIn or send
-                                me an{" "}
+                                in down below and <br /> feel free to reach out
+                                to me on LinkedIn or send me an{" "}
                                 <strong>
                                     <a href="#">email</a>
                                 </strong>
                                 .
-                                <h2>
-                                    <GoMarkGithub />
-                                    <FaLinkedin />
-                                    <IoMdMail />
+                                <h2 style={styles.links}>
+                                    <a
+                                        href="https://github.com/stefanwerleman"
+                                        target="_blank"
+                                    >
+                                        <GoMarkGithub style={styles.github} />
+                                    </a>
+
+                                    <a
+                                        href="https://www.linkedin.com/in/stefanwerleman"
+                                        target="_blank"
+                                    >
+                                        <FaLinkedin style={styles.linkedin} />
+                                    </a>
+                                    <a href="#" target="_blank">
+                                        <IoMdMail style={styles.email} />
+                                    </a>
                                 </h2>
                             </p>
                         </Col>
@@ -82,9 +93,20 @@ class AboutMe extends React.Component {
 
 const styles = {
     container: {
-        // padding: "21.13%",
+        paddingLeft: "7.20%",
+        paddingRight: "7.20%",
+        paddingTop: "5.20%",
+        paddingBottom: "12.13%",
     },
     image: { width: 271, height: 323 },
+    linkedin: { color: "black" },
+    github: { color: "black" },
+    email: { color: "black" },
+    links: {
+        justifyContent: "space-between",
+        display: "flex",
+        width: "16%",
+    },
 };
 
 export default AboutMe;
