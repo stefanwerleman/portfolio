@@ -9,12 +9,7 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Technical Skills</p>
-                            <hr
-                                style={{
-                                    borderColor: "#39689b",
-                                    borderWidth: 5,
-                                }}
-                            />
+                            <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
@@ -41,7 +36,13 @@ class Skills extends React.Component {
                                     <strong>All Things Books</strong>
                                 </a>{" "}
                                 React Native application uses Google's{" "}
-                                <strong>Books API</strong>.
+                                <a
+                                    href="https://developers.google.com/books"
+                                    target="_blank"
+                                >
+                                    <strong>Books API</strong>
+                                </a>
+                                .
                             </p>
                         </Col>
                     </Row>
@@ -49,6 +50,7 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h2>Languages:</h2>
+                            <hr />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
@@ -89,6 +91,12 @@ class Skills extends React.Component {
                         </Col>
                     </Row>
                     <br />
+                    <Row className="justify-content-md-center">
+                        <Col md="auto">
+                            <h2>Most Frequently Used Tools:</h2>
+                            <hr />
+                        </Col>
+                    </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h5>Frameworks:</h5>
@@ -149,6 +157,10 @@ const styles = {
         paddingTop: "5.20%",
         paddingBottom: "12.13%",
         backgroundColor: "#eee",
+    },
+    mainLine: {
+        borderColor: "#39689b",
+        borderWidth: 5,
     },
 };
 
