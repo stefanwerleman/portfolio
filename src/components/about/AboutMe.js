@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";

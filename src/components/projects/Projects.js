@@ -1,7 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import Project from "../project/Project";
 
 class Projects extends React.Component {
+    state = {
+        projects: [],
+    };
     render() {
         return (
             <div>
@@ -16,6 +20,9 @@ class Projects extends React.Component {
                                 }}
                             />
                         </Col>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        <Col></Col>
                     </Row>
                 </Container>
             </div>

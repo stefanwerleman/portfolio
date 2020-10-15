@@ -1,14 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-    SiCodio,
-    SiJava,
-    SiJavascript,
-    SiPython,
-    SiHtml5,
-    SiCss3,
-} from "react-icons/si";
-import { DiRuby } from "react-icons/di";
 
 class Skills extends React.Component {
     render() {
