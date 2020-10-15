@@ -9,13 +9,9 @@ class ContactMe extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Contact Me</p>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <p>
-                                _______________________________________________
-                            </p>
+                            <hr
+                                style={{ borderColor: "white", borderWidth: 5 }}
+                            />
                         </Col>
                     </Row>
                 </Container>

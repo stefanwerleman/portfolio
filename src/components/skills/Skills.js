@@ -18,13 +18,12 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Technical Skills</p>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <p>
-                                _______________________________________________
-                            </p>
+                            <hr
+                                style={{
+                                    borderColor: "#39689b",
+                                    borderWidth: 5,
+                                }}
+                            />
                         </Col>
                     </Row>
 
@@ -34,7 +33,7 @@ class Skills extends React.Component {
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Col md="auto">
+                        <Col lg="auto">
                             <h5>
                                 <strong>C</strong>
                             </h5>
@@ -74,6 +73,7 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h5>Frameworks:</h5>
+
                             <ul>
                                 <li>React.js</li>
                                 <li>Node.js</li>

@@ -11,16 +11,16 @@ class Front extends React.Component {
                         <Col md="auto">
                             <h1 className="display-3">
                                 <strong>STEFAN WERLEMAN</strong>
+                                <hr
+                                    style={{
+                                        borderColor: "white",
+                                        borderWidth: 5,
+                                    }}
+                                />
                             </h1>
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <h6>
-                                __________________________________________________________________________
-                            </h6>
-                        </Col>
-                    </Row>
+
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h4>COMPUTER SCIENCE STUDENT AT UCF</h4>

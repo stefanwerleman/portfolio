@@ -9,13 +9,12 @@ class Experience extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Experience</p>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <p>
-                                _______________________________________________
-                            </p>
+                            <hr
+                                style={{
+                                    borderColor: "#39689b",
+                                    borderWidth: 5,
+                                }}
+                            />
                         </Col>
                     </Row>
                 </Container>

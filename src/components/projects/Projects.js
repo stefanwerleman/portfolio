@@ -9,13 +9,12 @@ class Projects extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Projects</p>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <p>
-                                _______________________________________________
-                            </p>
+                            <hr
+                                style={{
+                                    borderColor: "#39689b",
+                                    borderWidth: 5,
+                                }}
+                            />
                         </Col>
                     </Row>
                 </Container>
