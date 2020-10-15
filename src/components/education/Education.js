@@ -9,12 +9,7 @@ class Education extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Education</p>
-                            <hr
-                                style={{
-                                    borderColor: "#39689b",
-                                    borderWidth: 5,
-                                }}
-                            />
+                            <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                 </Container>
@@ -27,6 +22,10 @@ const styles = {
     container: {
         paddingTop: "5.20%",
         backgroundColor: "#eee",
+    },
+    mainLine: {
+        borderColor: "#39689b",
+        borderWidth: 5,
     },
 };
 

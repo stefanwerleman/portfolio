@@ -11,12 +11,7 @@ class Front extends React.Component {
                         <Col md="auto">
                             <h1 className="display-3">
                                 <strong>STEFAN WERLEMAN</strong>
-                                <hr
-                                    style={{
-                                        borderColor: "white",
-                                        borderWidth: 5,
-                                    }}
-                                />
+                                <hr style={styles.mainLine} />
                             </h1>
                         </Col>
                     </Row>
@@ -40,6 +35,10 @@ const styles = {
         backgroundColor: "#39689b",
         opacity: 0.8,
         padding: "16.68%",
+    },
+    mainLine: {
+        borderColor: "white",
+        borderWidth: 5,
     },
 };
 

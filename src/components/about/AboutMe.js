@@ -13,16 +13,11 @@ class AboutMe extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">About Me</p>
-                            <hr
-                                style={{
-                                    borderColor: "#39689b",
-                                    borderWidth: 5,
-                                }}
-                            />
+                            <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Col md="auto">
+                        <Col lg="auto">
                             <Image
                                 src={Img}
                                 alt="Profile Picture"
@@ -63,25 +58,25 @@ class AboutMe extends React.Component {
                                     <a href="#">email</a>
                                 </strong>
                                 .
-                                <h2 style={styles.links}>
-                                    <a
-                                        href="https://github.com/stefanwerleman"
-                                        target="_blank"
-                                    >
-                                        <GoMarkGithub style={styles.github} />
-                                    </a>
-
-                                    <a
-                                        href="https://www.linkedin.com/in/stefanwerleman"
-                                        target="_blank"
-                                    >
-                                        <FaLinkedin style={styles.linkedin} />
-                                    </a>
-                                    <a href="#" target="_blank">
-                                        <IoMdMail style={styles.email} />
-                                    </a>
-                                </h2>
                             </p>
+                            <h3 style={styles.links}>
+                                <a
+                                    href="https://github.com/stefanwerleman"
+                                    target="_blank"
+                                >
+                                    <GoMarkGithub style={styles.github} />
+                                </a>
+
+                                <a
+                                    href="https://www.linkedin.com/in/stefanwerleman"
+                                    target="_blank"
+                                >
+                                    <FaLinkedin style={styles.linkedin} />
+                                </a>
+                                <a href="#" target="_blank">
+                                    <IoMdMail style={styles.email} />
+                                </a>
+                            </h3>
                         </Col>
                     </Row>
                 </Container>
@@ -105,6 +100,10 @@ const styles = {
         justifyContent: "space-between",
         display: "flex",
         width: "16%",
+    },
+    mainLine: {
+        borderColor: "#39689b",
+        borderWidth: 5,
     },
 };
 

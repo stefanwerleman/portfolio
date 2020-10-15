@@ -50,7 +50,7 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h2>Languages:</h2>
-                            <hr />
+                            <hr style={styles.smallLines} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
@@ -94,7 +94,7 @@ class Skills extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <h2>Most Frequently Used Tools:</h2>
-                            <hr />
+                            <hr style={styles.smallLines} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
@@ -162,6 +162,7 @@ const styles = {
         borderColor: "#39689b",
         borderWidth: 5,
     },
+    smallLines: { borderColor: "#39689b" },
 };
 
 export default Skills;

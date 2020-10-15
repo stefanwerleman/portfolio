@@ -9,9 +9,7 @@ class ContactMe extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Contact Me</p>
-                            <hr
-                                style={{ borderColor: "white", borderWidth: 5 }}
-                            />
+                            <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                 </Container>
@@ -26,6 +24,7 @@ const styles = {
         color: "white",
         paddingTop: "5.20%",
     },
+    mainLine: { borderColor: "white", borderWidth: 5 },
 };
 
 export default ContactMe;
