@@ -26,7 +26,7 @@ class Projects extends React.Component {
 
 const styles = {
     container: {
-        // padding: "21.13%",
+        paddingTop: "5.20%",
     },
 };
 

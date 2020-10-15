@@ -26,9 +26,9 @@ class ContactMe extends React.Component {
 
 const styles = {
     container: {
-        // padding: "21.13%",
         backgroundColor: "#39689b",
         color: "white",
+        paddingTop: "5.20%",
     },
 };
 
