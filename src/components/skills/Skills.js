@@ -26,6 +26,34 @@ class Skills extends React.Component {
                             />
                         </Col>
                     </Row>
+                    <Row className="justify-content-md-center">
+                        <Col md="auto">
+                            <p>
+                                I worked with a wide variety of programming
+                                languages. Whenever I work on web applications I
+                                rely on <strong>JavaScript</strong> or{" "}
+                                <strong>Django</strong> with their respective
+                                frameworks. <br />
+                                For programming competitions or algorithms and
+                                data structures, I heavily use{" "}
+                                <strong>Java</strong> because that is the
+                                language I am most proficient in. Whenever I{" "}
+                                <br />
+                                need the most performance I use{" "}
+                                <strong>C</strong>, however I am starting lean
+                                more towards <strong>C++</strong> for
+                                performance. For APIs I mostly use{" "}
+                                <strong>Google Cloud Technologies</strong>,{" "}
+                                <br />
+                                the{" "}
+                                <a href="#">
+                                    <strong>All Things Books</strong>
+                                </a>{" "}
+                                React Native application uses Google's{" "}
+                                <strong>Books API</strong>.
+                            </p>
+                        </Col>
+                    </Row>
 
                     <Row className="justify-content-md-center">
                         <Col md="auto">
@@ -33,7 +61,7 @@ class Skills extends React.Component {
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Col lg="auto">
+                        <Col md="auto">
                             <h5>
                                 <strong>C</strong>
                             </h5>
