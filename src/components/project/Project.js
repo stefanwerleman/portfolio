@@ -32,10 +32,12 @@ class Project extends React.Component {
                         </Card.Title>
 
                         <Card.Subtitle>{title}</Card.Subtitle>
-                        <Card.Text style={{ color: "#39689b" }}>
+                        <Card.Text style={styles.description}>
                             {description}
                         </Card.Text>
-                        <Card.Title>
+                    </Card.Body>
+                    <Card.Footer>
+                        <Card.Title style={{}}>
                             <SiJavascript />
                             <SiJavascript />
                             <SiJavascript />
@@ -65,7 +67,7 @@ class Project extends React.Component {
                             <SiJavascript />
                             <SiJavascript />
                         </Card.Title>
-                    </Card.Body>
+                    </Card.Footer>
                 </Card>
             </Container>
         );
@@ -73,7 +75,8 @@ class Project extends React.Component {
 }
 
 const styles = {
-    card: { backgroundColor: "#eee", borderWidth: 0 },
+    card: { backgroundColor: "#eee", borderWidth: 0, height: "100%" },
+    description: { color: "#39689b" },
 };
 
 export default Project;
