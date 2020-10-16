@@ -31,7 +31,83 @@ class Projects extends React.Component {
                     url:
                         "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
                 },
+                title: "All Things Books",
+                description:
+                    "Developed a web application that sends the user to two of one webpages. This challenge helped me learn how to write applications with the Cloudflare Workers API. The command-line tool Wrangler was used on the Linux terminal to run and deploy the application.",
+                tools: [
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "mongodb",
+                    "html",
+                    "css",
+                ],
+            },
+            {
+                id: uuid(),
+                links: {
+                    github: "https://github.com/stefanwerleman/full-stack-app",
+                    url:
+                        "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
+                },
                 title: "Cloudflare Workers Full Stack Challenge",
+                description:
+                    "Developed a web application that sends the user to two of one webpages. This challenge helped me learn how to write applications with the Cloudflare Workers API. The command-line tool Wrangler was used on the Linux terminal to run and deploy the application.",
+                tools: [
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "mongodb",
+                    "html",
+                    "css",
+                ],
+            },
+            {
+                id: uuid(),
+                links: {
+                    github: "https://github.com/stefanwerleman/full-stack-app",
+                    url:
+                        "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
+                },
+                title: "Skip List",
+                description:
+                    "Developed a web application that sends the user to two of one webpages. This challenge helped me learn how to write applications with the Cloudflare Workers API. The command-line tool Wrangler was used on the Linux terminal to run and deploy the application.",
+                tools: [
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "mongodb",
+                    "html",
+                    "css",
+                ],
+            },
+            {
+                id: uuid(),
+                links: {
+                    github: "https://github.com/stefanwerleman/full-stack-app",
+                    url:
+                        "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
+                },
+                title: "Document Drop Application",
+                description:
+                    "Developed a web application that sends the user to two of one webpages. This challenge helped me learn how to write applications with the Cloudflare Workers API. The command-line tool Wrangler was used on the Linux terminal to run and deploy the application.",
+                tools: [
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "mongodb",
+                    "html",
+                    "css",
+                ],
+            },
+            {
+                id: uuid(),
+                links: {
+                    github: "https://github.com/stefanwerleman/full-stack-app",
+                    url:
+                        "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
+                },
+                title: "Trie Object",
                 description:
                     "Developed a web application that sends the user to two of one webpages. This challenge helped me learn how to write applications with the Cloudflare Workers API. The command-line tool Wrangler was used on the Linux terminal to run and deploy the application.",
                 tools: [
@@ -53,6 +129,18 @@ class Projects extends React.Component {
                         <Col md="auto">
                             <p className="display-4">Projects</p>
                             <hr style={styles.mainLine} />
+                        </Col>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        <Col md="auto">
+                            <p>
+                                Some of these projects consist of web
+                                applications for internship challenges,
+                                Hackathons, or as coursework from some of my
+                                classes. The projects that are from some of my
+                                courses will not be available publicly on GitHub
+                                for Academic Integrity Guidelines by UCF.
+                            </p>
                         </Col>
                     </Row>
                     <Row lg={3} className="justify-content-md-center">
