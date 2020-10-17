@@ -20,11 +20,11 @@ class ContactMe extends React.Component {
 
 const styles = {
     container: {
-        backgroundColor: "#39689b",
+        backgroundColor: "#0d2c5a",
         color: "white",
         paddingTop: "5.20%",
     },
-    mainLine: { borderColor: "white", borderWidth: 5 },
+    mainLine: { borderColor: "#5b9bbc", borderWidth: 5 },
 };
 
 export default ContactMe;

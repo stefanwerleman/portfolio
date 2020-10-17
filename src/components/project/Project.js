@@ -21,7 +21,7 @@ class Project extends React.Component {
         const { links, title, description, tools } = this.props.project;
 
         return (
-            <Container>
+            <Container style={{ paddingBottom: 25 }}>
                 <Card style={styles.card}>
                     <Card.Body>
                         <Card.Title className="d-flex">

@@ -102,7 +102,7 @@ const styles = {
         width: "16%",
     },
     mainLine: {
-        borderColor: "#39689b",
+        borderColor: "#FF1B1C",
         borderWidth: 5,
     },
 };

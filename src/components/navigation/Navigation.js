@@ -30,6 +30,6 @@ class Navigation extends React.Component {
     }
 }
 
-const styles = { navbar: { backgroundColor: "#39689b", top: -1 } };
+const styles = { navbar: { backgroundColor: "#0d2c5a", top: -1 } };
 
 export default Navigation;

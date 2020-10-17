@@ -32,8 +32,8 @@ const styles = {
         color: "white",
     },
     container: {
-        backgroundColor: "#39689b",
-        opacity: 0.8,
+        backgroundColor: "#0d2c5a",
+        opacity: 0.7,
         padding: "16.68%",
     },
     mainLine: {

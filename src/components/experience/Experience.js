@@ -23,7 +23,7 @@ const styles = {
         paddingTop: "5.20%",
     },
     mainLine: {
-        borderColor: "#39689b",
+        borderColor: "#FF1B1C",
         borderWidth: 5,
     },
 };

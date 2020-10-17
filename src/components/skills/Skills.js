@@ -159,7 +159,7 @@ const styles = {
         backgroundColor: "#eee",
     },
     mainLine: {
-        borderColor: "#39689b",
+        borderColor: "#FF1B1C",
         borderWidth: 5,
     },
     smallLines: { borderColor: "#39689b" },
