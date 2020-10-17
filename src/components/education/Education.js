@@ -41,11 +41,11 @@ class Education extends React.Component {
                                 Studied Algorithms and Data Structures, Discrete
                                 Mathematics, Web Development, and Computer
                                 Architecture. Here I have gained a strong
-                                foundation on computing, <br />
-                                mathematical theory, and different programming
-                                pardigms. I learned the core fundamentals of
-                                algorithms, data structures, and problem solving
-                                with the C and <br />
+                                foundation in computing, <br />
+                                mathematical theory of computing, and different
+                                programming pardigms. I learned the core
+                                fundamentals of algorithms, data structures, and
+                                problem solving with the C and <br />
                                 Java programming languages. <br />
                                 <br />
                                 In the Spring of 2020, I took a competitive
