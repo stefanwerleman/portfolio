@@ -37,8 +37,9 @@ class Project extends React.Component {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <Card.Title style={{}}>
-                            <SiJavascript />
+                        <Card.Title>
+                            {/* TODO: This is for every item generated */}
+                            <SiJavascript style={{ marginRight: 7 }} />
                             <SiJavascript />
                             <SiJavascript />
                             <SiJavascript />
