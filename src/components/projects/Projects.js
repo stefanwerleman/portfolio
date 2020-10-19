@@ -159,6 +159,7 @@ class Projects extends React.Component {
                                 courses will not be available publicly on GitHub
                                 for Academic Integrity Guidelines by UCF.
                             </p>
+                            <br />
                         </Col>
                     </Row>
                     <Row lg={3} className="justify-content-md-center">

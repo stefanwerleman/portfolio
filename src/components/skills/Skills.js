@@ -32,7 +32,10 @@ class Skills extends React.Component {
                                 <strong>Google Cloud Technologies</strong>,{" "}
                                 <br />
                                 the{" "}
-                                <a href="#">
+                                <a
+                                    href="https://github.com/KnightHacks-GMSJ/AllThingsBooks"
+                                    target="_blank"
+                                >
                                     <strong>All Things Books</strong>
                                 </a>{" "}
                                 React Native application uses Google's{" "}

@@ -3,6 +3,8 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { Link } from "react-scroll";
+
 import Img from "./profile-pic.png";
 
 class AboutMe extends React.Component {
@@ -50,12 +52,28 @@ class AboutMe extends React.Component {
                                 <br />
                                 If you are interested, you can view some of my{" "}
                                 <strong>
-                                    <a href="#">projects</a>
+                                    <a href="#">
+                                        <Link
+                                            to="projects"
+                                            smooth={true}
+                                            duration={1000}
+                                        >
+                                            projects
+                                        </Link>
+                                    </a>
                                 </strong>{" "}
                                 in down below and <br /> feel free to reach out
                                 to me on LinkedIn or send me an{" "}
                                 <strong>
-                                    <a href="#">email</a>
+                                    <a href="#">
+                                        <Link
+                                            to="contact"
+                                            smooth={true}
+                                            duration={1000}
+                                        >
+                                            email
+                                        </Link>
+                                    </a>
                                 </strong>
                                 .
                             </p>
@@ -74,7 +92,13 @@ class AboutMe extends React.Component {
                                     <FaLinkedin style={styles.linkedin} />
                                 </a>
                                 <a href="#" target="_blank">
-                                    <IoMdMail style={styles.email} />
+                                    <Link
+                                        to="contact"
+                                        smooth={true}
+                                        duration={1000}
+                                    >
+                                        <IoMdMail style={styles.email} />
+                                    </Link>
                                 </a>
                             </h3>
                         </Col>
