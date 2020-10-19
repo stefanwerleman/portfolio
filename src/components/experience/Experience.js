@@ -41,7 +41,10 @@ class Experience extends React.Component {
                                 Currently work 30 hours a week. Perform auto
                                 detailing services on various vehicles and am
                                 responsible for the sales of detail sercives and
-                                products.
+                                products. This is a part-time job <br />
+                                to support myself and my living expenses. This
+                                job really helped with my interpersonal skils at
+                                a professional level.
                             </p>
                         </Col>
                     </Row>
@@ -54,7 +57,8 @@ class Experience extends React.Component {
 const styles = {
     container: {
         paddingTop: "5.20%",
-        paddingBottom: "12.13%",
+        // paddingBottom: "12.13%",
+        paddingBottom: "24.13%",
     },
     mainLine: {
         borderColor: "#FF1B1C",
