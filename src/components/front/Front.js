@@ -34,7 +34,10 @@ const styles = {
     container: {
         backgroundColor: "#0d2c5a",
         opacity: 0.7,
-        padding: "16.68%",
+        paddingTop: "16.68%",
+        paddingLeft: "16.68%",
+        paddingRight: "16.68%",
+        paddingBottom: "15.15%",
     },
     mainLine: {
         borderColor: "white",
