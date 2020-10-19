@@ -23,8 +23,9 @@ class ContactMe extends React.Component {
                             </p>
                         </Col>
                     </Row>
+                    <br />
                     <Row className="justify-content-md-center">
-                        <Col md="auto" style={{ width: "45%" }}>
+                        <Col md="auto" style={{ width: "50%" }}>
                             <Form>
                                 <Form.Group>
                                     <Form.Control placeholder="Name"></Form.Control>
@@ -63,7 +64,7 @@ const styles = {
         backgroundColor: "#0d2c5a",
         color: "white",
         paddingTop: "5.20%",
-        paddingBottom: "5%",
+        paddingBottom: "3.5%",
     },
     mainLine: { borderColor: "#5b9bbc", borderWidth: 5 },
 };
