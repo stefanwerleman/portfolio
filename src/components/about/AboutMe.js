@@ -90,7 +90,7 @@ const styles = {
         paddingLeft: "7.20%",
         paddingRight: "7.20%",
         paddingTop: "5.20%",
-        paddingBottom: "12.13%",
+        paddingBottom: "14.2%",
     },
     image: { width: 271, height: 323 },
     linkedin: { color: "black" },
