@@ -12,8 +12,8 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <Front id="front" />
-                <Navigation id="navigation" />
+                <Front />
+                <Navigation />
                 <AboutMe id="about" />
                 <Skills id="skills" />
                 <Projects id="projects" />
