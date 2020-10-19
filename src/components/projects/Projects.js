@@ -46,6 +46,24 @@ class Projects extends React.Component {
             {
                 id: uuid(),
                 links: {
+                    github: "https://github.com/stefanwerleman/facebook-clone",
+                    url: "https://github.com/stefanwerleman/facebook-clone",
+                },
+                title: "This Personal Website",
+                description:
+                    "Developed a full-stack website that simulates a basic user chat system.",
+                tools: [
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "mongodb",
+                    "html",
+                    "css",
+                ],
+            },
+            {
+                id: uuid(),
+                links: {
                     github: "https://github.com/stefanwerleman/full-stack-app",
                     url:
                         "https://stefanwerleman-full-stack-app.stefanwerleman.workers.dev/",
