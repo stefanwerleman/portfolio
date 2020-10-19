@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 class ContactMe extends React.Component {
     render() {
         return (
-            <div>
+            <div id="contact">
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">

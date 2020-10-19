@@ -8,7 +8,7 @@ import Img from "./profile-pic.png";
 class AboutMe extends React.Component {
     render() {
         return (
-            <div>
+            <div id="about">
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">

@@ -6,7 +6,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 class Education extends React.Component {
     render() {
         return (
-            <div>
+            <div id="education">
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">

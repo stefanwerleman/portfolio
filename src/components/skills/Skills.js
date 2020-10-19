@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 class Skills extends React.Component {
     render() {
         return (
-            <div>
+            <div id="skills">
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">

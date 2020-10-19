@@ -14,12 +14,12 @@ class App extends React.Component {
             <div>
                 <Front />
                 <Navigation />
-                <AboutMe id="about" />
-                <Skills id="skills" />
-                <Projects id="projects" />
-                <Education id="education" />
-                <Experience id="experience" />
-                <ContactMe id="contact" />
+                <AboutMe />
+                <Skills />
+                <Projects />
+                <Education />
+                <Experience />
+                <ContactMe />
             </div>
         );
     }

@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import Resume from "./Resume.pdf";
 
+import { Link } from "react-scroll";
+
 class Navigation extends React.Component {
     render() {
         return (
@@ -12,11 +14,37 @@ class Navigation extends React.Component {
                 sticky="top"
             >
                 <Nav>
-                    <Nav.Link>About</Nav.Link>
-                    <Nav.Link>Skills</Nav.Link>
-                    <Nav.Link>Projects</Nav.Link>
-                    <Nav.Link>Experience</Nav.Link>
-                    <Nav.Link>Contact</Nav.Link>
+                    <Nav.Link>
+                        <Link to="about" smooth={true} duration={1000}>
+                            About
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        {" "}
+                        <Link to="skills" smooth={true} duration={1000}>
+                            Skills
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to="projects" smooth={true} duration={1000}>
+                            Projects
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to="education" smooth={true} duration={1000}>
+                            Education
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to="experience" smooth={true} duration={1000}>
+                            Experience
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to="contact" smooth={true} duration={1000}>
+                            Contact
+                        </Link>
+                    </Nav.Link>
                     <Button
                         variant="outline-light"
                         href={Resume}
