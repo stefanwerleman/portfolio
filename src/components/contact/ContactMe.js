@@ -63,7 +63,7 @@ const styles = {
         backgroundColor: "#0d2c5a",
         color: "white",
         paddingTop: "5.20%",
-        paddingBottom: "12.13%",
+        paddingBottom: "5%",
     },
     mainLine: { borderColor: "#5b9bbc", borderWidth: 5 },
 };
