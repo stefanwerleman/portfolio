@@ -4,7 +4,6 @@ import Project from "../project/Project";
 import projectList from "../projectObjects/projectObjects";
 class Projects extends React.Component {
     state = {
-        isExpanded: false,
         projects: projectList,
     };
     render() {
