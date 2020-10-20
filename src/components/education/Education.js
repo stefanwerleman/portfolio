@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { GoPrimitiveDot } from "react-icons/go";
 
 // TODO: Include FLit-Path Organization in here.
 class Education extends React.Component {

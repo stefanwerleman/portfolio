@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 
 import { ImFolderOpen } from "react-icons/im";
 import { GoMarkGithub, GoLinkExternal } from "react-icons/go";
@@ -26,7 +26,7 @@ class Project extends React.Component {
         console.log("dest", dest);
         if (dest) {
             return (
-                <a href={dest} target="_blank">
+                <a href={dest} target="_blank" rel="noopener noreferrer">
                     <GoMarkGithub style={styles.link} />
                 </a>
             );
@@ -35,7 +35,7 @@ class Project extends React.Component {
 
         if (dest) {
             return (
-                <a href={dest} target="_blank">
+                <a href={dest} target="_blank" rel="noopener noreferrer">
                     <GoLinkExternal style={styles.link} />
                 </a>
             );

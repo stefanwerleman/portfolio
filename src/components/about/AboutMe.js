@@ -81,6 +81,7 @@ class AboutMe extends React.Component {
                                 <a
                                     href="https://github.com/stefanwerleman"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <GoMarkGithub style={styles.github} />
                                 </a>
@@ -88,10 +89,15 @@ class AboutMe extends React.Component {
                                 <a
                                     href="https://www.linkedin.com/in/stefanwerleman"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <FaLinkedin style={styles.linkedin} />
                                 </a>
-                                <a href="#" target="_blank">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <Link
                                         to="contact"
                                         smooth={true}

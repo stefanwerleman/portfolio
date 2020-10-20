@@ -35,6 +35,7 @@ class Skills extends React.Component {
                                 <a
                                     href="https://github.com/KnightHacks-GMSJ/AllThingsBooks"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <strong>All Things Books</strong>
                                 </a>{" "}
@@ -42,6 +43,7 @@ class Skills extends React.Component {
                                 <a
                                     href="https://developers.google.com/books"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     <strong>Books API</strong>
                                 </a>
