@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const PORT = 3000;
+const PORT = 5000;
 const app = express();
 
 app.use(cors);
@@ -16,5 +16,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log("Listening on http://localhost:3000");
+    console.log("Listening on http://localhost:5000");
 });
