@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-server",
+  "version": "1.0.0",
+  "description": "This will server will be responsible for making API calls to the SendGrid API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
