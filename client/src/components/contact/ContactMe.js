@@ -24,9 +24,9 @@ class ContactMe extends React.Component {
                         </Col>
                     </Row>
                     <br />
-                    <Row className="justify-content-md-center">
-                        <Col md="auto" style={{ width: "50%" }}>
-                            <Form>
+                    <Form>
+                        <Row className="justify-content-md-center">
+                            <Col md="auto" style={{ width: "50%" }}>
                                 <Form.Group>
                                     <Form.Control placeholder="Name"></Form.Control>
                                 </Form.Group>
@@ -43,16 +43,16 @@ class ContactMe extends React.Component {
                                         placeholder="Message"
                                     ></Form.Control>
                                 </Form.Group>
-                            </Form>
-                        </Col>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            <Button type="submit" variant="info">
-                                Send
-                            </Button>
-                        </Col>
-                    </Row>
+                            </Col>
+                        </Row>
+                        <Row className="justify-content-md-center">
+                            <Form.Group>
+                                <Button type="submit" variant="info">
+                                    Send
+                                </Button>
+                            </Form.Group>
+                        </Row>
+                    </Form>
                 </Container>
             </div>
         );
