@@ -1,7 +1,39 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
+const axios = require("axios");
+
+const API_URL = "http://localhost:5000";
+
 class ContactMe extends React.Component {
+    state = {
+        name: null,
+        email: null,
+        message: null,
+    };
+
+    handleChange = (event) => {
+        this.setState({
+            [event.target.id]: event.target.value,
+        });
+    };
+
+    handleEmail = (event) => {
+        event.preventDefault();
+
+        const EMAIL_ENDPOINT = "/email";
+
+        let newEmail = {
+            name: this.state.name,
+            email: this.state.email,
+            message: this.state.message,
+        };
+
+        axios.post(API_URL + EMAIL_ENDPOINT, newEmail).then((res) => {
+            console.log(res.data);
+        });
+    };
+
     render() {
         return (
             <div id="contact">
@@ -23,24 +55,34 @@ class ContactMe extends React.Component {
                             </p>
                         </Col>
                     </Row>
+
                     <br />
-                    <Form>
+
+                    <Form onSubmit={this.handleEmail}>
                         <Row className="justify-content-md-center">
                             <Col md="auto" style={{ width: "50%" }}>
                                 <Form.Group>
-                                    <Form.Control placeholder="Name"></Form.Control>
-                                </Form.Group>
-                                <Form.Group>
                                     <Form.Control
-                                        type="email"
-                                        placeholder="Email"
+                                        id="name"
+                                        placeholder="Name"
+                                        onChange={this.handleChange}
                                     ></Form.Control>
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Control
+                                        id="email"
+                                        type="email"
+                                        placeholder="Email"
+                                        onChange={this.handleChange}
+                                    ></Form.Control>
+                                </Form.Group>
+                                <Form.Group>
+                                    <Form.Control
+                                        id="message"
                                         as="textarea"
                                         rows="8"
                                         placeholder="Message"
+                                        onChange={this.handleChange}
                                     ></Form.Control>
                                 </Form.Group>
                             </Col>

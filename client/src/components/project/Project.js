@@ -23,7 +23,7 @@ import {
 class Project extends React.Component {
     getLink = (link) => {
         let dest = link["github"];
-        console.log("dest", dest);
+
         if (dest) {
             return (
                 <a href={dest} target="_blank" rel="noopener noreferrer">
