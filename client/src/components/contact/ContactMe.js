@@ -19,8 +19,6 @@ class ContactMe extends React.Component {
     };
 
     handleEmail = (event) => {
-        event.preventDefault();
-
         const EMAIL_ENDPOINT = "/email";
 
         let newEmail = {
@@ -66,6 +64,7 @@ class ContactMe extends React.Component {
                                         id="name"
                                         placeholder="Name"
                                         onChange={this.handleChange}
+                                        required
                                     ></Form.Control>
                                 </Form.Group>
                                 <Form.Group>
@@ -74,6 +73,7 @@ class ContactMe extends React.Component {
                                         type="email"
                                         placeholder="Email"
                                         onChange={this.handleChange}
+                                        required
                                     ></Form.Control>
                                 </Form.Group>
                                 <Form.Group>
@@ -83,6 +83,7 @@ class ContactMe extends React.Component {
                                         rows="8"
                                         placeholder="Message"
                                         onChange={this.handleChange}
+                                        required
                                     ></Form.Control>
                                 </Form.Group>
                             </Col>
