@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Container } from "react-bootstrap";
-
 import { ImFolderOpen } from "react-icons/im";
 import { GoMarkGithub, GoLinkExternal } from "react-icons/go";
 import { DiRuby, DiDjango } from "react-icons/di";
@@ -20,6 +19,7 @@ import {
     SiMocha,
     SiBootstrap,
 } from "react-icons/si";
+
 class Project extends React.Component {
     getLink = (link) => {
         let dest = link["github"];
@@ -68,7 +68,7 @@ class Project extends React.Component {
         const { links, title, description, tools } = this.props.project;
 
         return (
-            <Container style={{ paddingBottom: 25 }}>
+            <Container style={styles.container}>
                 <Card style={styles.card}>
                     <Card.Body>
                         <Card.Title className="d-flex">
@@ -94,6 +94,7 @@ class Project extends React.Component {
 }
 
 const styles = {
+    container: { paddingBottom: 25, height: "100%" },
     card: { backgroundColor: "#eee", borderWidth: 0, height: "100%" },
     description: { color: "#39689b" },
     tool: { marginRight: 7 },

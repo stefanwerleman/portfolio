@@ -83,7 +83,7 @@ const projects = [
         ],
         title: "Trie Object",
         description:
-            "Wrote a Ruby container class that simulates the Trie data structure. Supports basic insertion, search, and deletion operations. Includes other functions, such as converting the Trie into an array and printing all the strings contained in the Trie. Used Git and GitHub to save all the code. I made this container to practice a enw language I learned.",
+            "Wrote a Ruby container class that simulates the Trie data structure. Supports basic insertion, search, and deletion operations. Includes other functions, such as converting the Trie into an array and printing all the strings contained in the Trie. Used Git and GitHub to save all the code. I made this container to practice a new language I learned.",
         tools: ["ruby"],
     },
 ];

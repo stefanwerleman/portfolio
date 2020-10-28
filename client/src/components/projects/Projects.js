@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Project from "../project/Project";
 import projectList from "../projectObjects/projectObjects";
+import Tilt from "react-tilt";
+
 class Projects extends React.Component {
     state = {
         projects: projectList,
@@ -31,7 +33,9 @@ class Projects extends React.Component {
                     </Row>
                     <Row lg={3} className="justify-content-md-center">
                         {this.state.projects.map((project) => (
-                            <Project key={project.id} project={project} />
+                            <Tilt options={{ max: 2.5, scale: 1.07 }}>
+                                <Project key={project.id} project={project} />
+                            </Tilt>
                         ))}
                     </Row>
                 </Container>
