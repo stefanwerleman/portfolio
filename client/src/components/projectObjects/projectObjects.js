@@ -3,6 +3,7 @@ import uuid from "uuid";
 const projects = [
     {
         id: uuid(),
+        number: 0,
         links: [
             { github: "https://github.com/stefanwerleman/facebook-clone" },
             { url: null },
@@ -14,6 +15,7 @@ const projects = [
     },
     {
         id: uuid(),
+        number: 1,
         links: [
             {
                 github: "https://github.com/KnightHacks-GMSJ/AllThingsBooks",
@@ -27,6 +29,7 @@ const projects = [
     },
     {
         id: uuid(),
+        number: 2,
         links: [
             {
                 github: "https://github.com/stefanwerleman/portfolio",
@@ -42,6 +45,7 @@ const projects = [
     },
     {
         id: uuid(),
+        number: 3,
         links: [
             {
                 github: "https://github.com/stefanwerleman/full-stack-app",
@@ -58,6 +62,7 @@ const projects = [
     },
     {
         id: uuid(),
+        number: 4,
         links: [
             {
                 github: null,
@@ -73,6 +78,7 @@ const projects = [
     },
     {
         id: uuid(),
+        number: 5,
         links: [
             {
                 github: "https://github.com/stefanwerleman/trie-container",
