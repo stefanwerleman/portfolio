@@ -18,6 +18,22 @@ class Projects extends React.Component {
         this.setState({ isExpanded: false });
     };
 
+    toggleButton = (isExpanded) => {
+        if (!isExpanded) {
+            return (
+                <Button variant="primary" onClick={this.handleExpand}>
+                    Show More
+                </Button>
+            );
+        } else {
+            return (
+                <Button variant="outline-primary" onClick={this.handleCollapse}>
+                    Show Less
+                </Button>
+            );
+        }
+    };
+
     render() {
         const { isExpanded } = this.state;
 
@@ -55,23 +71,7 @@ class Projects extends React.Component {
                         ))}
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Col md="auto">
-                            {!isExpanded ? (
-                                <Button
-                                    variant="primary"
-                                    onClick={this.handleExpand}
-                                >
-                                    Show More
-                                </Button>
-                            ) : (
-                                <Button
-                                    variant="outline-primary"
-                                    onClick={this.handleCollapse}
-                                >
-                                    Show Less
-                                </Button>
-                            )}
-                        </Col>
+                        <Col md="auto">{this.toggleButton(isExpanded)}</Col>
                     </Row>
                 </Container>
             </div>
