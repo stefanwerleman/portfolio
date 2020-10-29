@@ -19,6 +19,7 @@ import {
     SiMocha,
     SiBootstrap,
 } from "react-icons/si";
+import Tilt from "react-tilt";
 
 class Project extends React.Component {
     getLink = (link) => {
@@ -68,27 +69,29 @@ class Project extends React.Component {
         const { links, title, description, tools } = this.props.project;
 
         return (
-            <Container style={styles.container}>
-                <Card style={styles.card}>
-                    <Card.Body>
-                        <Card.Title className="d-flex">
-                            <ImFolderOpen className="mr-auto" />
+            <Tilt options={{ max: 2.5, scale: 1.07 }}>
+                <Container style={styles.container}>
+                    <Card style={styles.card}>
+                        <Card.Body>
+                            <Card.Title className="d-flex">
+                                <ImFolderOpen className="mr-auto" />
 
-                            {links.map((link) => this.getLink(link))}
-                        </Card.Title>
+                                {links.map((link) => this.getLink(link))}
+                            </Card.Title>
 
-                        <Card.Subtitle>{title}</Card.Subtitle>
-                        <Card.Text style={styles.description}>
-                            {description}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <Card.Title>
-                            {tools.map((tool) => toolDict[tool])}
-                        </Card.Title>
-                    </Card.Footer>
-                </Card>
-            </Container>
+                            <Card.Subtitle>{title}</Card.Subtitle>
+                            <Card.Text style={styles.description}>
+                                {description}
+                            </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                            <Card.Title>
+                                {tools.map((tool) => toolDict[tool])}
+                            </Card.Title>
+                        </Card.Footer>
+                    </Card>
+                </Container>
+            </Tilt>
         );
     }
 }

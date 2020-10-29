@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Collapse } from "react-bootstrap";
 import Project from "../project/Project";
 import projectList from "../projectObjects/projectObjects";
-import Tilt from "react-tilt";
 
 class Projects extends React.Component {
     state = {
@@ -34,8 +33,15 @@ class Projects extends React.Component {
         }
     };
 
+    getOtherProjects = (projects) => {
+        const otherProjects = projects.filter((project) => project.number > 2);
+        return otherProjects;
+    };
+
     render() {
-        const { isExpanded } = this.state;
+        const { isExpanded, projects } = this.state;
+
+        const otherProjects = this.getOtherProjects(projects);
 
         return (
             <div id="projects">
@@ -59,17 +65,22 @@ class Projects extends React.Component {
                             <br />
                         </Col>
                     </Row>
-                    <Row
-                        lg={3}
-                        className="justify-content-md-center"
-                        style={{ paddingBottom: 75 }}
-                    >
-                        {this.state.projects.map((project) => (
-                            <Tilt options={{ max: 2.5, scale: 1.07 }}>
-                                <Project key={project.id} project={project} />
-                            </Tilt>
-                        ))}
+                    <Row lg={3} className="justify-content-md-center">
+                        <Project key={projects[0].id} project={projects[0]} />
+                        <Project key={projects[1].id} project={projects[1]} />
+                        <Project key={projects[1].id} project={projects[1]} />
                     </Row>
+                    <Collapse in={isExpanded}>
+                        <Row
+                            lg={3}
+                            className="justify-content-md-center"
+                            style={{ paddingBottom: 75 }}
+                        >
+                            {otherProjects.map((project) => (
+                                <Project key={project.id} project={project} />
+                            ))}
+                        </Row>
+                    </Collapse>
                     <Row className="justify-content-md-center">
                         <Col md="auto">{this.toggleButton(isExpanded)}</Col>
                     </Row>
