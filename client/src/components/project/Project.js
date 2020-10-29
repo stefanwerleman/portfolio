@@ -18,6 +18,7 @@ import {
     SiGooglecloud,
     SiMocha,
     SiBootstrap,
+    SiCplusplus,
 } from "react-icons/si";
 import Tilt from "react-tilt";
 
@@ -64,6 +65,7 @@ class Project extends React.Component {
             googlecloud: <SiGooglecloud style={styles.tool} />,
             mocha: <SiMocha style={styles.tool} />,
             bootstrap: <SiBootstrap style={styles.tool} />,
+            cpp: <SiCplusplus style={styles.tool} />,
         };
 
         const { links, title, description, tools } = this.props.project;
