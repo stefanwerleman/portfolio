@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Media } from "react-bootstrap";
 import "./Front.css";
 
 class Front extends React.Component {
@@ -8,7 +8,7 @@ class Front extends React.Component {
             <div className="Front" style={styles.front}>
                 <Container style={styles.container} fluid>
                     <Row className="justify-content-md-center">
-                        <Col md="auto">
+                        <Col xs="auto">
                             <h1 className="display-3">
                                 <strong>STEFAN WERLEMAN</strong>
                                 <hr style={styles.mainLine} />
@@ -17,7 +17,7 @@ class Front extends React.Component {
                     </Row>
 
                     <Row className="justify-content-md-center">
-                        <Col md="auto">
+                        <Col xs="auto">
                             <h4>COMPUTER SCIENCE STUDENT AT UCF</h4>
                         </Col>
                     </Row>
