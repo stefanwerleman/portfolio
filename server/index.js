@@ -25,8 +25,8 @@ app.post("/email", (req, res) => {
         to: process.env.TO_EMAIL,
         from: process.env.FROM_EMAIL,
         subject: "Someone sent you a message on your personal website.",
-        text: `From: ${email.name} Email: ${email.email} ${email.message}`,
-        html: `<h3>From: <strong>${email.name}</strong></h3><h3>Email: <a>${email.email}</a></h3><br></br><p>${email.message}</p>`,
+        text: `${email.name} ${email.email} ${email.message}`,
+        html: `<h3><strong>${email.name}</strong></h3><h3><a>${email.email}</a></h3><br></br><p>${email.message}</p>`,
     };
 
     sendEmail(msg);
