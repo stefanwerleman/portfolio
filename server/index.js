@@ -25,24 +25,23 @@ app.post("/email", (req, res) => {
 
 const msg = {
     to: "stefanwerleman@yahoo.com",
-    from: "stefanwerleman@yahoo.com",
+    from: "stefanwerleman@knights.ucf.edu",
     subject: "Test Send with SendGrid",
     text: '"Hello There" - Obi Wan Kenobi',
-    html: "<strong>and easy to do anywhere, even with Node.js</strong>",
+    html: `<strong>"Hello There" - Obi Wan Kenobi</strong>`,
 };
 
-function sgTest(msg) {
+function sendEmail(msg) {
     sgmail
         .send(msg)
         .then(() => {
             console.log("Email Sent");
         })
         .catch((error) => {
-            console.error("Error: ", error);
+            console.error("Failed to send email");
+            console.error(error);
         });
 }
-
-sgTest(msg);
 
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`);
