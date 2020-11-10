@@ -81,6 +81,11 @@ class Skills extends React.Component {
                         </Col>
                         <Col md="auto">
                             <h5>
+                                <strong>C++</strong>
+                            </h5>
+                        </Col>
+                        <Col md="auto">
+                            <h5>
                                 <strong>HTML5</strong>
                             </h5>
                         </Col>
