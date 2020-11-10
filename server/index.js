@@ -20,16 +20,22 @@ app.get("/", (req, res) => {
 
 app.post("/email", (req, res) => {
     let email = req.body;
-    console.log(email);
-});
 
-const msg = {
-    to: "stefanwerleman@yahoo.com",
-    from: "stefanwerleman@knights.ucf.edu",
-    subject: "Test Send with SendGrid",
-    text: '"Hello There" - Obi Wan Kenobi',
-    html: `<strong>"Hello There" - Obi Wan Kenobi</strong>`,
-};
+    const msg = {
+        to: process.env.TO_EMAIL,
+        from: process.env.FROM_EMAIL,
+        subject: "Someone sent you a message on your personal website",
+        text: `From: ${email.name} Email: ${email.email} ${email.message}`,
+        html: `From: <strong>${email.name}</strong><br></br> Email: <a>${email.email}</a><br></br><p>${email.message}</p>`,
+    };
+
+    sendEmail(msg);
+
+    res.json({
+        status: 200,
+        message: "Successfully Submitted",
+    });
+});
 
 function sendEmail(msg) {
     sgmail

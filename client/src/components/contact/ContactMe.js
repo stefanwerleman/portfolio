@@ -19,17 +19,23 @@ class ContactMe extends React.Component {
     };
 
     handleEmail = (event) => {
-        const EMAIL_ENDPOINT = "/email";
-
         let newEmail = {
             name: this.state.name,
             email: this.state.email,
             message: this.state.message,
         };
 
-        axios.post(API_URL + EMAIL_ENDPOINT, newEmail).then((res) => {
-            console.log(res.data);
-        });
+        axios
+            .post(API_URL + "/email", newEmail)
+            .then((res) => {
+                if (res.status !== 200) {
+                    event.preventDefault();
+                }
+                console.log("Email sent");
+            })
+            .catch((error) => {
+                console.log(error);
+            });
     };
 
     render() {
@@ -47,8 +53,9 @@ class ContactMe extends React.Component {
                             <p>
                                 If you are interested or looking for a Software
                                 Engineer for an internship position. Drop me an
-                                email at stefanwerleman@yahoo.com or fill out
-                                the form below <br />
+                                email at{" "}
+                                <strong>stefanwerleman@yahoo.com</strong> or
+                                fill out the form below <br />
                                 and I will get back to you as soon as possible.
                             </p>
                         </Col>
