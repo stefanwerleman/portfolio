@@ -5,8 +5,8 @@
     }
 
     #container {
-        padding-top: 73%;
-        padding-bottom: 73%;
+        padding-top: 69.4%;
+        padding-bottom: 69.4%;
     }
 
     #name {
@@ -16,6 +16,10 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
@@ -26,8 +30,8 @@
     }
 
     #container {
-        padding-top: 73%;
-        padding-bottom: 73%;
+        padding-top: 69.5%;
+        padding-bottom: 69.5%;
     }
 
     #name {
@@ -37,6 +41,10 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
@@ -47,8 +55,8 @@
     }
 
     #container {
-        padding-top: 84.2%;
-        padding-bottom: 84.2%;
+        padding-top: 81%;
+        padding-bottom: 81%;
     }
 
     #name {
@@ -57,6 +65,10 @@
     }
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
@@ -67,8 +79,8 @@
     }
 
     #container {
-        padding-top: 73%;
-        padding-bottom: 73%;
+        padding-top: 69.4%;
+        padding-bottom: 69.4%;
     }
 
     #name {
@@ -78,6 +90,10 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
@@ -88,8 +104,8 @@
     }
 
     #container {
-        padding-top: 92.3%;
-        padding-bottom: 92.3%;
+        padding-top: 88.8%;
+        padding-bottom: 88.8%;
     }
 
     #name {
@@ -99,6 +115,10 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
@@ -109,8 +129,8 @@
     }
 
     #container {
-        padding-top: 53.4%;
-        padding-bottom: 53.4%;
+        padding-top: 51%;
+        padding-bottom: 51%;
     }
 
     #name {
@@ -121,13 +141,17 @@
     #sub {
         font-size: 29px;
     }
+
+    #navigation {
+        height: 95px;
+    }
 }
 
 /* Ipad Pro */
 @media (max-width: 1025px) and (max-height: 1367px) and (min-width: 1024px) and (min-height: 1366px) {
     #container {
-        padding-top: 55%;
-        padding-bottom: 55%;
+        padding-top: 53.5%;
+        padding-bottom: 53.5%;
     }
 
     #name {
@@ -138,13 +162,21 @@
     #sub {
         font-size: 38px;
     }
+
+    #navigation {
+        height: 95px;
+    }
 }
 
 /* Surface Duo */
 @media (max-width: 541px) and (max-height: 721px) and (min-width: 540px) and (min-height: 720px) {
+    #front {
+        background-size: auto;
+    }
+
     #container {
-        padding-top: 50.8%;
-        padding-bottom: 50.8%;
+        padding-top: 47.2%;
+        padding-bottom: 47.2%;
     }
 
     #name {
@@ -154,14 +186,18 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }
 
 /* Galaxy Fold */
 @media (max-width: 281px) and (max-height: 654px) and (min-width: 280px) and (min-height: 653px) {
     #container {
-        padding-top: 100.7%;
-        padding-bottom: 100.7%;
+        padding-top: 97%;
+        padding-bottom: 97%;
     }
 
     #name {
@@ -171,5 +207,9 @@
 
     #sub {
         font-size: 20px;
+    }
+
+    #navigation {
+        height: 95px;
     }
 }

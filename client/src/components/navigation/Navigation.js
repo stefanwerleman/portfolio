@@ -8,6 +8,7 @@ class Navigation extends React.Component {
     render() {
         return (
             <Navbar
+                id="navigation"
                 style={styles.navbar}
                 variant="dark"
                 className="justify-content-md-center"

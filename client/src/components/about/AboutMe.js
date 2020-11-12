@@ -4,23 +4,26 @@ import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { Link } from "react-scroll";
-
 import Img from "./profile-pic.png";
+import "./AboutMe.css";
 
 class AboutMe extends React.Component {
     render() {
         return (
             <div id="about">
-                <Container style={styles.container} fluid>
+                <Container id="about-container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">About Me</p>
+                            <p id="about-title" className="display-4">
+                                About Me
+                            </p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Col lg="auto">
+                        <Col id="image-container" lg="auto">
                             <Image
+                                id="profile-pic"
                                 src={Img}
                                 alt="Profile Picture"
                                 style={styles.image}
@@ -122,7 +125,6 @@ const styles = {
         paddingTop: "5.20%",
         paddingBottom: "14.2%",
     },
-    image: { width: 271, height: 323 },
     linkedin: { color: "black" },
     github: { color: "black" },
     email: { color: "black" },
