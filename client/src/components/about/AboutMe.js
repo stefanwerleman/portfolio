@@ -11,7 +11,7 @@ class AboutMe extends React.Component {
     render() {
         return (
             <div id="about">
-                <Container id="about-container" style={styles.container} fluid>
+                <Container id="about-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p id="about-title" className="display-4">
@@ -59,8 +59,8 @@ class AboutMe extends React.Component {
                                         </Link>
                                     </a>
                                 </strong>{" "}
-                                in down below and <br /> feel free to reach out
-                                to me on LinkedIn or send me an{" "}
+                                in down below and feel free to reach out to me
+                                on LinkedIn or send me an{" "}
                                 <strong>
                                     <a href="#">
                                         <Link
@@ -74,7 +74,7 @@ class AboutMe extends React.Component {
                                 </strong>
                                 .
                             </p>
-                            <h3 style={styles.links}>
+                            <h3 id="links" style={styles.links}>
                                 <a
                                     href="https://github.com/stefanwerleman"
                                     target="_blank"
@@ -113,20 +113,9 @@ class AboutMe extends React.Component {
 }
 
 const styles = {
-    container: {
-        paddingLeft: "7.20%",
-        paddingRight: "7.20%",
-        paddingTop: "5.20%",
-        paddingBottom: "14.2%",
-    },
     linkedin: { color: "black" },
     github: { color: "black" },
     email: { color: "black" },
-    links: {
-        justifyContent: "space-between",
-        display: "flex",
-        width: "16%",
-    },
     mainLine: {
         borderColor: "#FF1B1C",
         borderWidth: 5,

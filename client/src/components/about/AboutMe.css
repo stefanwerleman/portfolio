@@ -1,9 +1,19 @@
 #about-container {
     margin: auto;
     width: 90%;
+    padding-left: 7.2%;
+    padding-right: 7.2%;
+    padding-top: 5.2%;
+    padding-bottom: 14.2%;
 }
 
 #profile-pic {
     width: 271px;
     height: 323px;
+}
+
+#links {
+    justify-content: space-between;
+    display: flex;
+    width: 13%;
 }

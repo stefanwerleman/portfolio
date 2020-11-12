@@ -22,22 +22,32 @@
         height: 95px;
     }
 
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+    }
+
     #about-title {
         text-align: center;
     }
 
     #image-container {
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 100px;
     }
 
     #profile-pic {
-        height: max-content;
-        width: auto;
+        height: 100%;
+        width: 100%;
     }
 
     #about-text {
         font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
     }
 }
 
