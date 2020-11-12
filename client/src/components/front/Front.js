@@ -18,7 +18,7 @@ class Front extends React.Component {
 
                     <Row className="justify-content-md-center">
                         <Col xs="auto">
-                            <h4>COMPUTER SCIENCE STUDENT AT UCF</h4>
+                            <h4 id="sub">COMPUTER SCIENCE STUDENT AT UCF</h4>
                         </Col>
                     </Row>
                 </Container>
