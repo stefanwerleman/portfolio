@@ -5,7 +5,7 @@ import "./Front.css";
 class Front extends React.Component {
     render() {
         return (
-            <div className="Front" style={styles.front}>
+            <div id="front" style={styles.front}>
                 <Container id="container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col xs="auto">
