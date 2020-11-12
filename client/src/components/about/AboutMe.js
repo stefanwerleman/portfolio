@@ -20,35 +20,29 @@ class AboutMe extends React.Component {
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
-                        <Col id="image-container" lg="auto">
+                    <Row id="about-body" className="justify-content-lg-center">
+                        <Col id="image-container" lg={3}>
                             <Image
                                 id="profile-pic"
                                 src={Img}
                                 alt="Profile Picture"
-                                style={styles.image}
                                 rounded
                             ></Image>
                         </Col>
-                        <Col md="auto">
-                            <p>
+                        <Col lg={9}>
+                            <p id="about-text">
                                 <strong>Hello,</strong>
                                 <br />
                                 <br />I am a Senior at the University of Central
                                 Florida majoring in Computer Science. I graduate
-                                <br />
                                 in Summer 2021. I am seeking a Software
                                 Engineering internship for Spring 2021 or Summer
-                                <br />
                                 2021. I am interested in the Finance and Space
                                 industries. By obtaining an internship, I hope
-                                <br />
                                 to gain the experience and knowledge necessary
                                 to provide optimal results at the company I work
-                                <br />
                                 for in my career. I am a very diligent and
                                 detail-oriented individual that always strives
-                                <br />
                                 for success. I hope to bring these qualities to
                                 an internship.
                                 <br />

@@ -21,6 +21,24 @@
     #navigation {
         height: 95px;
     }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #profile-pic {
+        height: max-content;
+        width: auto;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
 }
 
 /* Pixel 2 */

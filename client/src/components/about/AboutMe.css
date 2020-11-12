@@ -1,3 +1,8 @@
+#about-container {
+    margin: auto;
+    width: 90%;
+}
+
 #profile-pic {
     width: 271px;
     height: 323px;
