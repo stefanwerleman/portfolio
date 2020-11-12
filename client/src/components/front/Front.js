@@ -6,10 +6,10 @@ class Front extends React.Component {
     render() {
         return (
             <div className="Front" style={styles.front}>
-                <Container style={styles.container} fluid>
+                <Container id="container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col xs="auto">
-                            <h1 className="display-3">
+                            <h1 id="name" className="display-3">
                                 <strong>STEFAN WERLEMAN</strong>
                                 <hr style={styles.mainLine} />
                             </h1>
@@ -34,7 +34,6 @@ const styles = {
     container: {
         backgroundColor: "#0d2c5a",
         opacity: 0.7,
-        padding: "16.68%",
     },
     mainLine: {
         borderColor: "white",

@@ -11,7 +11,7 @@ import Education from "./components/education/Education";
 class App extends React.Component {
     render() {
         return (
-            <div style={{ position: "absolute" }}>
+            <div id="root" style={{ position: "absolute" }}>
                 <Front />
                 <Navigation />
                 <AboutMe />
