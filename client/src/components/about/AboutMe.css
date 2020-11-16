@@ -14,13 +14,11 @@
 }
 
 #image-container {
-    order: 1;
     flex-grow: 1;
 }
 
 #text-container {
     flex-grow: 3;
-    order: 2;
 }
 
 #profile-pic {
