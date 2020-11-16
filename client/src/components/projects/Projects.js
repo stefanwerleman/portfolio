@@ -45,14 +45,18 @@ class Projects extends React.Component {
 
         return (
             <div id="projects">
-                <Container style={styles.container} fluid>
-                    <Row className="justify-content-md-center">
+                <Container
+                    id="projects-container"
+                    style={styles.container}
+                    fluid
+                >
+                    <Row id="title-row" className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Projects</p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
+                    <Row id="text-row" className="justify-content-md-center">
                         <Col md="auto">
                             <p>
                                 Some of these projects consist of web
@@ -65,13 +69,18 @@ class Projects extends React.Component {
                             <br />
                         </Col>
                     </Row>
-                    <Row lg={3} className="justify-content-md-center">
+                    <Row
+                        id="project-row"
+                        lg={3}
+                        className="justify-content-md-center"
+                    >
                         <Project key={projects[0].id} project={projects[0]} />
                         <Project key={projects[1].id} project={projects[1]} />
                         <Project key={projects[2].id} project={projects[2]} />
                     </Row>
-                    <Collapse in={isExpanded}>
+                    <Collapse id="projects-collapse" in={isExpanded}>
                         <Row
+                            id="more-projects-row"
                             lg={3}
                             className="justify-content-md-center"
                             style={{ paddingBottom: 75 }}
@@ -81,7 +90,10 @@ class Projects extends React.Component {
                             ))}
                         </Row>
                     </Collapse>
-                    <Row className="justify-content-md-center">
+                    <Row
+                        id="button-container"
+                        className="justify-content-md-center"
+                    >
                         <Col md="auto">{this.toggleButton(isExpanded)}</Col>
                     </Row>
                 </Container>
