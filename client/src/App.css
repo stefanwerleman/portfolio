@@ -351,8 +351,22 @@
     #about-container {
         padding-top: 15%;
         padding-bottom: 15%;
-        padding-left: 1%;
-        padding-right: 1%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #about-body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #image-container {
+        background-color: red;
+        padding-bottom: 75px;
+    }
+
+    #profile-pic {
     }
 }
 

@@ -7,6 +7,22 @@
     padding-bottom: 14.2%;
 }
 
+#about-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#image-container {
+    order: 1;
+    flex-grow: 1;
+}
+
+#text-container {
+    flex-grow: 3;
+    order: 2;
+}
+
 #profile-pic {
     width: 271px;
     height: 323px;

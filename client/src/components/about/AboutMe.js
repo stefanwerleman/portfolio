@@ -21,7 +21,7 @@ class AboutMe extends React.Component {
                         </Col>
                     </Row>
                     <Row id="about-body" className="justify-content-lg-center">
-                        <Col id="image-container" lg={3}>
+                        <Col id="image-container">
                             <Image
                                 id="profile-pic"
                                 src={Img}
@@ -29,7 +29,7 @@ class AboutMe extends React.Component {
                                 rounded
                             ></Image>
                         </Col>
-                        <Col lg={9}>
+                        <Col id="text-container">
                             <p id="about-text">
                                 <strong>Hello,</strong>
                                 <br />
