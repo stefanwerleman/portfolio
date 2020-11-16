@@ -25,6 +25,8 @@
     #about-container {
         padding-top: 21%;
         padding-bottom: 21%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     #about-title {
@@ -74,6 +76,36 @@
     #navigation {
         height: 95px;
     }
+
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
+    }
 }
 
 /* Pixel 2 XL */
@@ -97,6 +129,36 @@
 
     #navigation {
         height: 95px;
+    }
+
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
     }
 }
 
@@ -123,6 +185,36 @@
     #navigation {
         height: 95px;
     }
+
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
+    }
 }
 
 /* Iphone 10 */
@@ -147,6 +239,36 @@
 
     #navigation {
         height: 95px;
+    }
+
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
     }
 }
 
@@ -173,6 +295,37 @@
     #navigation {
         height: 95px;
     }
+
+    #about-container {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 95%;
+        width: 95%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        justify-content: left;
+        width: 40%;
+    }
 }
 
 /* Ipad Pro */
@@ -193,6 +346,13 @@
 
     #navigation {
         height: 95px;
+    }
+
+    #about-container {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 }
 
@@ -219,6 +379,36 @@
     #navigation {
         height: 95px;
     }
+
+    #about-container {
+        padding-top: 19%;
+        padding-bottom: 19%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 92%;
+        width: 92%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
+    }
 }
 
 /* Galaxy Fold */
@@ -239,5 +429,35 @@
 
     #navigation {
         height: 95px;
+    }
+
+    #about-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    #about-title {
+        text-align: center;
+    }
+
+    #image-container {
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    #profile-pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    #about-text {
+        font-size: x-large;
+    }
+
+    #links {
+        font-size: 45px;
+        width: 40%;
     }
 }
