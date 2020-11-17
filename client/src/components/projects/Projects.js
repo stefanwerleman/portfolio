@@ -76,7 +76,8 @@ class Projects extends React.Component {
                     </Row>
                     <Row
                         id="project-row"
-                        lg={3}
+                        xl={3}
+                        lg={2}
                         className="justify-content-md-center"
                     >
                         <Project key={projects[0].id} project={projects[0]} />
@@ -86,7 +87,8 @@ class Projects extends React.Component {
                     <Collapse id="projects-collapse" in={isExpanded}>
                         <Row
                             id="more-projects-row"
-                            lg={3}
+                            xl={3}
+                            lg={2}
                             className="justify-content-md-center"
                             style={{ paddingBottom: 75 }}
                         >
