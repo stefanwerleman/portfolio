@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button, Collapse } from "react-bootstrap";
 import Project from "../project/Project";
 import projectList from "../projectObjects/projectObjects";
+import "./Projects.css";
 
 class Projects extends React.Component {
     state = {
@@ -45,11 +46,7 @@ class Projects extends React.Component {
 
         return (
             <div id="projects">
-                <Container
-                    id="projects-container"
-                    style={styles.container}
-                    fluid
-                >
+                <Container id="projects-container" fluid>
                     <Row id="title-row" className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Projects</p>
@@ -58,7 +55,7 @@ class Projects extends React.Component {
                     </Row>
                     <Row id="text-row" className="justify-content-md-center">
                         <Col md="auto">
-                            <p>
+                            <p id="project-text">
                                 Some of these projects consist of web
                                 applications for internship challenges,
                                 Hackathons, or as coursework from some of my
@@ -103,12 +100,6 @@ class Projects extends React.Component {
 }
 
 const styles = {
-    container: {
-        paddingTop: "5.20%",
-        paddingLeft: "7.20%",
-        paddingRight: "7.20%",
-        paddingBottom: "12.13%",
-    },
     mainLine: {
         borderColor: "#FF1B1C",
         borderWidth: 5,

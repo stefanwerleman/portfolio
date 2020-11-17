@@ -22,6 +22,7 @@
         height: 95px;
     }
 
+    /* About Me */
     #about-container {
         padding-top: 21%;
         padding-bottom: 21%;
@@ -34,6 +35,10 @@
         flex-direction: column;
     }
 
+    #about-text {
+        font-size: xx-large;
+    }
+
     #profile-pic {
         height: max-content;
         width: max-content;
@@ -42,6 +47,31 @@
     #links {
         font-size: 45px;
         width: 40%;
+    }
+
+    /* Projects List */
+    #projects-container {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    #title-row {
+        text-align: center;
+    }
+
+    #project-text {
+        font-size: x-large;
+    }
+
+    /* Project */
+    #card-body,
+    #card-title {
+        font-size: x-large;
+    }
+
+    #top-links,
+    #bottom-links {
+        font-size: xx-large;
     }
 }
 
@@ -422,6 +452,7 @@
         height: 95px;
     }
 
+    /* About Me */
     #about-container {
         padding-top: 20%;
         padding-bottom: 20%;

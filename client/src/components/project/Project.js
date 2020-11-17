@@ -21,6 +21,7 @@ import {
     SiCplusplus,
 } from "react-icons/si";
 import Tilt from "react-tilt";
+import "./Project.css";
 
 class Project extends React.Component {
     getLink = (link) => {
@@ -48,46 +49,51 @@ class Project extends React.Component {
 
     render() {
         const toolDict = {
-            java: <SiJava style={styles.tool} />,
-            javascript: <SiJavascript style={styles.tool} />,
-            python: <SiPython style={styles.tool} />,
-            html: <SiHtml5 style={styles.tool} />,
-            css: <SiCss3 style={styles.tool} />,
-            react: <SiReact style={styles.tool} />,
-            reactnative: <SiReact style={styles.tool} />,
-            node: <SiNodeDotJs style={styles.tool} />,
-            linux: <SiLinux style={styles.tool} />,
-            jest: <SiJest style={styles.tool} />,
-            c: <SiCodio style={styles.tool} />,
-            ruby: <DiRuby style={styles.tool} />,
-            django: <DiDjango style={styles.tool} />,
-            mongodb: <SiMongodb style={styles.tool} />,
-            googlecloud: <SiGooglecloud style={styles.tool} />,
-            mocha: <SiMocha style={styles.tool} />,
-            bootstrap: <SiBootstrap style={styles.tool} />,
-            cpp: <SiCplusplus style={styles.tool} />,
+            java: <SiJava className="tool" />,
+            javascript: <SiJavascript className="tool" />,
+            python: <SiPython className="tool" />,
+            html: <SiHtml5 className="tool" />,
+            css: <SiCss3 className="tool" />,
+            react: <SiReact className="tool" />,
+            reactnative: <SiReact className="tool" />,
+            node: <SiNodeDotJs className="tool" />,
+            linux: <SiLinux className="tool" />,
+            jest: <SiJest className="tool" />,
+            c: <SiCodio className="tool" />,
+            ruby: <DiRuby className="tool" />,
+            django: <DiDjango className="tool" />,
+            mongodb: <SiMongodb className="tool" />,
+            googlecloud: <SiGooglecloud className="tool" />,
+            mocha: <SiMocha className="tool" />,
+            bootstrap: <SiBootstrap className="tool" />,
+            cpp: <SiCplusplus className="tool" />,
         };
 
         const { links, title, description, tools } = this.props.project;
 
         return (
-            <Tilt options={{ max: 2.5, scale: 1.07 }}>
-                <Container style={styles.container}>
+            <Tilt id="tilt-container" options={{ max: 2.5, scale: 1.07 }}>
+                <Container id="card-container" style={styles.container}>
                     <Card style={styles.card}>
-                        <Card.Body>
-                            <Card.Title className="d-flex">
-                                <ImFolderOpen className="mr-auto" />
+                        <Card.Body id="card-body">
+                            <Card.Title id="top-links" className="d-flex">
+                                <ImFolderOpen
+                                    id="folder-icon"
+                                    className="mr-auto"
+                                />
 
                                 {links.map((link) => this.getLink(link))}
                             </Card.Title>
 
-                            <Card.Subtitle>{title}</Card.Subtitle>
+                            <Card.Subtitle id="card-title">
+                                {title}
+                            </Card.Subtitle>
                             <Card.Text style={styles.description}>
                                 {description}
                             </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                            <Card.Title>
+                            <Card.Title id="bottom-links">
                                 {tools.map((tool) => toolDict[tool])}
                             </Card.Title>
                         </Card.Footer>
@@ -102,7 +108,6 @@ const styles = {
     container: { paddingBottom: 25, height: "100%" },
     card: { backgroundColor: "#eee", borderWidth: 0, height: "100%" },
     description: { color: "#39689b" },
-    tool: { marginRight: 7 },
     link: { marginRight: 7, color: "black" },
 };
 
