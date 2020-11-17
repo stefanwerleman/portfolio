@@ -21,13 +21,21 @@ class Projects extends React.Component {
     toggleButton = (isExpanded) => {
         if (!isExpanded) {
             return (
-                <Button variant="primary" onClick={this.handleExpand}>
+                <Button
+                    className="project-button"
+                    variant="primary"
+                    onClick={this.handleExpand}
+                >
                     Show More
                 </Button>
             );
         } else {
             return (
-                <Button variant="outline-primary" onClick={this.handleCollapse}>
+                <Button
+                    className="project-button"
+                    variant="outline-primary"
+                    onClick={this.handleCollapse}
+                >
                     Show Less
                 </Button>
             );
@@ -91,7 +99,7 @@ class Projects extends React.Component {
                         id="button-container"
                         className="justify-content-md-center"
                     >
-                        <Col md="auto">{this.toggleButton(isExpanded)}</Col>
+                        {this.toggleButton(isExpanded)}
                     </Row>
                 </Container>
             </div>
