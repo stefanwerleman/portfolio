@@ -1,28 +1,19 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Formik } from "formik";
+import * as Yup from "yup";
+import "./ContactMe.css";
 
 const axios = require("axios");
 
 const API_URL = "http://localhost:5000";
 
 class ContactMe extends React.Component {
-    state = {
-        name: null,
-        email: null,
-        message: null,
-    };
-
-    handleChange = (event) => {
-        this.setState({
-            [event.target.id]: event.target.value,
-        });
-    };
-
     handleEmail = (event) => {
         let newEmail = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message,
+            name: event.name,
+            email: event.email,
+            message: event.message,
         };
 
         axios
@@ -37,6 +28,74 @@ class ContactMe extends React.Component {
                 console.log(error);
             });
     };
+
+    schema = Yup.object({
+        name: Yup.string().required("Please provide a name."),
+        email: Yup.string().required("Please provide a valid email address."),
+        message: Yup.string().required("Please provide a message."),
+    });
+
+    emailForm = () => (
+        <Formik
+            validationSchema={this.schema}
+            onSubmit={this.handleEmail}
+            initialValues={{}}
+        >
+            {({ handleSubmit, errors, handleChange }) => (
+                <Form id="form-container" onSubmit={handleSubmit} noValidate>
+                    <Form.Row>
+                        <Form.Group id="name-group" as={Col}>
+                            <Form.Control
+                                id="name"
+                                placeholder="Name"
+                                onChange={handleChange}
+                                isInvalid={!!errors.name}
+                            ></Form.Control>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {errors.name}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Form.Row>
+                    <Form.Row>
+                        <Form.Group id="email-group" as={Col}>
+                            <Form.Control
+                                id="email"
+                                type="email"
+                                placeholder="Email"
+                                onChange={handleChange}
+                                isInvalid={!!errors.name}
+                            ></Form.Control>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {errors.email}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Form.Row>
+                    <Form.Row>
+                        <Form.Group id="message-group" as={Col}>
+                            <Form.Control
+                                id="message"
+                                as="textarea"
+                                rows="8"
+                                placeholder="Message"
+                                onChange={handleChange}
+                                isInvalid={!!errors.message}
+                            ></Form.Control>
+                            <Form.Control.Feedback type="invalid" tooltip>
+                                {errors.message}
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                    </Form.Row>
+                    <Row className="justify-content-md-center">
+                        <Form.Group>
+                            <Button type="submit" variant="info">
+                                Send
+                            </Button>
+                        </Form.Group>
+                    </Row>
+                </Form>
+            )}
+        </Formik>
+    );
 
     render() {
         return (
@@ -62,47 +121,9 @@ class ContactMe extends React.Component {
                     </Row>
 
                     <br />
-
-                    <Form onSubmit={this.handleEmail}>
-                        <Row className="justify-content-md-center">
-                            <Col md="auto" style={{ width: "50%" }}>
-                                <Form.Group>
-                                    <Form.Control
-                                        id="name"
-                                        placeholder="Name"
-                                        onChange={this.handleChange}
-                                        required
-                                    ></Form.Control>
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Control
-                                        id="email"
-                                        type="email"
-                                        placeholder="Email"
-                                        onChange={this.handleChange}
-                                        required
-                                    ></Form.Control>
-                                </Form.Group>
-                                <Form.Group>
-                                    <Form.Control
-                                        id="message"
-                                        as="textarea"
-                                        rows="8"
-                                        placeholder="Message"
-                                        onChange={this.handleChange}
-                                        required
-                                    ></Form.Control>
-                                </Form.Group>
-                            </Col>
-                        </Row>
-                        <Row className="justify-content-md-center">
-                            <Form.Group>
-                                <Button type="submit" variant="info">
-                                    Send
-                                </Button>
-                            </Form.Group>
-                        </Row>
-                    </Form>
+                    <Row className="justify-content-md-center">
+                        {this.emailForm()}
+                    </Row>
                 </Container>
             </div>
         );
