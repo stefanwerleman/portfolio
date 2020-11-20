@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./Experience.css";
 
 class Experience extends React.Component {
     render() {
         return (
             <div id="experience">
-                <Container style={styles.container} fluid>
+                <Container id="experience-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Experience</p>
@@ -37,14 +38,14 @@ class Experience extends React.Component {
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p>
+                            <p id="experience-text">
                                 Currently work 30 hours a week. Perform auto
                                 detailing services on various vehicles and am
                                 responsible for the sales of detail sercives and
-                                products. This is a part-time job <br />
-                                to support myself and my living expenses. This
-                                job really helped with my interpersonal skils at
-                                a professional level.
+                                products. This is a part-time job to support
+                                myself and my living expenses. This job really
+                                helped with my interpersonal skils at a
+                                professional level.
                             </p>
                         </Col>
                     </Row>
@@ -55,11 +56,6 @@ class Experience extends React.Component {
 }
 
 const styles = {
-    container: {
-        paddingTop: "5.20%",
-        // paddingBottom: "12.13%",
-        paddingBottom: "24.13%",
-    },
     mainLine: {
         borderColor: "#FF1B1C",
         borderWidth: 5,

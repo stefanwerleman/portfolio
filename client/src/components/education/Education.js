@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./Education.css";
 
 // TODO: Include FLit-Path Organization in here.
 class Education extends React.Component {
     render() {
         return (
             <div id="education">
-                <Container style={styles.container} fluid>
+                <Container id="education-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Education</p>
@@ -37,25 +38,24 @@ class Education extends React.Component {
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p>
+                            <p id="education-text">
                                 Studied Algorithms and Data Structures, Discrete
                                 Mathematics, Web Development, and Computer
                                 Architecture. Here I have gained a strong
-                                foundation in computing, <br />
-                                mathematical theory of computing, and different
-                                programming pardigms. I learned the core
-                                fundamentals of algorithms, data structures, and
-                                problem solving with the C and <br />
-                                Java programming languages. <br />
+                                foundation in computing, mathematical theory of
+                                computing, and different programming pardigms. I
+                                learned the core fundamentals of algorithms,
+                                data structures, and problem solving with the C
+                                and Java programming languages.
+                                <br />
                                 <br />
                                 In the Spring of 2020, I took a competitive
                                 programming course that allowed me to practice
-                                and improve on my problem-solving skills, <br />{" "}
+                                and improve on my problem-solving skills,
                                 algorithms, and data structures. This course put
                                 me in a competitive environment with individual,
-                                team, and online contests. Online contests{" "}
-                                <br />
-                                were used frequently to prepare for the in-class
+                                team, and online contests. Online contests were
+                                used frequently to prepare for the in-class
                                 contests, such as CodeForces, Google Code Jam,
                                 Kattis, and UCF's programming team practice
                                 contests.
@@ -64,8 +64,8 @@ class Education extends React.Component {
                                 Now I am currently taking a functional
                                 programming class where I am learning Haskell
                                 and Erlang. I am also starting to learn Data
-                                Science to continue on to one of <br />
-                                my favorite topics, Machine Learning.
+                                Science to continue on to one of my favorite
+                                topics, Machine Learning.
                             </p>
                         </Col>
                     </Row>
@@ -76,11 +76,6 @@ class Education extends React.Component {
 }
 
 const styles = {
-    container: {
-        paddingTop: "5.20%",
-        paddingBottom: "12.13%",
-        backgroundColor: "#eee",
-    },
     mainLine: {
         borderColor: "#FF1B1C",
         borderWidth: 5,
