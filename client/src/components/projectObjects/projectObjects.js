@@ -28,20 +28,6 @@ const projects = [
         number: count++,
         links: [
             {
-                github: "https://github.com/KnightHacks-GMSJ/AllThingsBooks",
-            },
-            { url: null },
-        ],
-        title: "All Things Books",
-        description:
-            "Developed a search engine for books, publishers, and authors using React Native. This project was made during the 2020 KnightHacks Virtual Hackathon. I was responsible for receiving the list of books from the Google Cloud Books API and processing them to make a list.",
-        tools: ["reactnative", "javascript", "googlecloud", "linux"],
-    },
-    {
-        id: uuid(),
-        number: count++,
-        links: [
-            {
                 github: "https://github.com/stefanwerleman/portfolio",
             },
             {
@@ -57,9 +43,25 @@ const projects = [
             "bootstrap",
             "css",
             "node",
+            "python",
+            "django",
             "googlecloud",
             "linux",
         ],
+    },
+    {
+        id: uuid(),
+        number: count++,
+        links: [
+            {
+                github: "https://github.com/KnightHacks-GMSJ/AllThingsBooks",
+            },
+            { url: null },
+        ],
+        title: "All Things Books",
+        description:
+            "Developed a search engine for books, publishers, and authors using React Native. This project was made during the 2020 KnightHacks Virtual Hackathon. I was responsible for receiving the list of books from the Google Cloud Books API and processing them to make a list.",
+        tools: ["reactnative", "javascript", "googlecloud", "linux"],
     },
     {
         id: uuid(),

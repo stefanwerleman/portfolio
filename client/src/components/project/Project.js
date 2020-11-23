@@ -68,7 +68,12 @@ class Project extends React.Component {
             jest: <SiJest className="tool" style={{ color: "#99425b" }} />,
             c: <SiCodio className="tool" style={{ color: "#5c6bc0" }} />,
             ruby: <DiRuby className="tool" style={{ color: "#e51f49" }} />,
-            django: <DiDjango className="tool" style={{ color: "#103e2e" }} />,
+            django: (
+                <DiDjango
+                    className="tool"
+                    style={{ color: "#103e2e", fontSize: "xx-large" }}
+                />
+            ),
             mongodb: (
                 <SiMongodb className="tool" style={{ color: "#50aa4c" }} />
             ),
