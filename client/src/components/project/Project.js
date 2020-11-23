@@ -56,7 +56,7 @@ class Project extends React.Component {
                     style={{ color: "#f7e018", backgroundColor: "black" }}
                 />
             ),
-            python: <SiPython className="tool" />,
+            python: <SiPython className="tool" style={{ color: "#008397" }} />,
             html: <SiHtml5 className="tool" style={{ color: "#e44d26" }} />,
             css: <SiCss3 className="tool" style={{ color: "#379ad6" }} />,
             react: <SiReact className="tool" style={{ color: "#7ddfff" }} />,
@@ -65,17 +65,21 @@ class Project extends React.Component {
             ),
             node: <SiNodeDotJs className="tool" style={{ color: "#689f63" }} />,
             linux: <SiLinux className="tool" />,
-            jest: <SiJest className="tool" />,
+            jest: <SiJest className="tool" style={{ color: "#99425b" }} />,
             c: <SiCodio className="tool" style={{ color: "#5c6bc0" }} />,
-            ruby: <DiRuby className="tool" />,
-            django: <DiDjango className="tool" />,
+            ruby: <DiRuby className="tool" style={{ color: "#e51f49" }} />,
+            django: <DiDjango className="tool" style={{ color: "#103e2e" }} />,
             mongodb: (
                 <SiMongodb className="tool" style={{ color: "#50aa4c" }} />
             ),
-            googlecloud: <SiGooglecloud className="tool" />,
-            mocha: <SiMocha className="tool" />,
-            bootstrap: <SiBootstrap className="tool" />,
-            cpp: <SiCplusplus className="tool" />,
+            googlecloud: (
+                <SiGooglecloud className="tool" style={{ color: "#1a73e8" }} />
+            ),
+            mocha: <SiMocha className="tool" style={{ color: "#8d6748" }} />,
+            bootstrap: (
+                <SiBootstrap className="tool" style={{ color: "#553a7d" }} />
+            ),
+            cpp: <SiCplusplus className="tool" style={{ color: "#649ad2" }} />,
         };
 
         const { links, title, description, tools } = this.props.project;
