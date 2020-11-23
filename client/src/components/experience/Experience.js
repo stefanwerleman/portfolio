@@ -9,13 +9,15 @@ class Experience extends React.Component {
                 <Container id="experience-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Experience</p>
+                            <p id="experience-title" className="display-4">
+                                Experience
+                            </p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h2>
+                            <h2 id="experience-company">
                                 <strong>
                                     Car Wash Palace and Detail Center
                                 </strong>
@@ -24,14 +26,20 @@ class Experience extends React.Component {
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h5 style={{ color: "#39689b" }}>
+                            <h5
+                                id="experience-position"
+                                style={{ color: "#39689b" }}
+                            >
                                 Detail Specialist and Sales Associate
                             </h5>
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
+                    <Row
+                        id="experience-date-row"
+                        className="justify-content-md-center"
+                    >
                         <Col md="auto">
-                            <h5>
+                            <h5 id="experience-info">
                                 <em>May 2017 - PRESENT</em>
                             </h5>
                         </Col>

@@ -10,27 +10,35 @@ class Education extends React.Component {
                 <Container id="education-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Education</p>
+                            <p id="education-title" className="display-4">
+                                Education
+                            </p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h2>
+                            <h2 id="education-school">
                                 <strong>University of Central Florida</strong>
                             </h2>
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <h5 style={{ color: "#39689b" }}>
+                            <h5
+                                id="education-major"
+                                style={{ color: "#39689b" }}
+                            >
                                 Bachelor of Science in Computer Science
                             </h5>
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
+                    <Row
+                        id="education-info-row"
+                        className="justify-content-md-center"
+                    >
                         <Col md="auto">
-                            <h5>
+                            <h5 id="education-info">
                                 <strong>Graduating:</strong> August 2021 |{" "}
                                 <strong>GPA:</strong> 3.826
                             </h5>

@@ -79,6 +79,63 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 62%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
+    }
 }
 
 /* Pixel 2 */
@@ -170,6 +227,63 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 62%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
+    }
 }
 
 /* Pixel 2 XL */
@@ -259,6 +373,63 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 84%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
     }
 }
 
@@ -351,6 +522,63 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 62%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
+    }
 }
 
 /* Iphone 10 */
@@ -441,6 +669,63 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 101%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
     }
 }
 
@@ -534,6 +819,62 @@
         flex-direction: row;
         justify-content: center;
     }
+    /* Education */
+    #education-container {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 15%;
+        padding-bottom: 59%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
+    }
 }
 
 /* Ipad Pro */
@@ -605,7 +946,6 @@
     }
 
     /* Project */
-
     #card-body,
     #card-title {
         font-size: larger;
@@ -620,6 +960,49 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* Education */
+    #education-container {
+        padding-top: 13%;
+        padding-bottom: 63%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+    }
+
+    #education-text {
+        font-size: larger;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 13%;
+        padding-bottom: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+    }
+
+    #experience-text {
+        font-size: larger;
     }
 }
 
@@ -710,6 +1093,63 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 17.5%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
+    }
 }
 
 /* Galaxy Fold */
@@ -793,5 +1233,62 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    /* Education */
+    #education-container {
+        padding-top: 21%;
+        padding-bottom: 21%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #education-title {
+        text-align: center;
+    }
+
+    #education-info-row {
+        margin-bottom: 8%;
+    }
+
+    #education-school,
+    #education-major,
+    #education-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #education-text {
+        font-size: x-large;
+    }
+
+    /* Experience */
+    #experience-container {
+        padding-top: 21%;
+        padding-bottom: 117%;
+        padding-left: 7%;
+        padding-right: 7%;
+        display: flex;
+        flex-direction: column;
+    }
+    #experience-title {
+        text-align: center;
+    }
+
+    #experience-date-row {
+        margin-bottom: 8%;
+    }
+
+    #experience-company,
+    #experience-position,
+    #experience-info {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    #experience-text {
+        font-size: x-large;
     }
 }
