@@ -30,7 +30,7 @@ class Project extends React.Component {
         if (dest) {
             return (
                 <a href={dest} target="_blank" rel="noopener noreferrer">
-                    <GoMarkGithub style={styles.link} />
+                    <GoMarkGithub style={styles.githublink} />
                 </a>
             );
         }
@@ -126,7 +126,8 @@ const styles = {
     container: { paddingBottom: 25, height: "100%" },
     card: { backgroundColor: "#eee", borderWidth: 0, height: "100%" },
     description: { color: "#39689b" },
-    link: { marginRight: 7, color: "black" },
+    githublink: { marginRight: 7, color: "black" },
+    link: { marginRight: 7 },
 };
 
 export default Project;
