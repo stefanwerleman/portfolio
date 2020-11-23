@@ -49,20 +49,29 @@ class Project extends React.Component {
 
     render() {
         const toolDict = {
-            java: <SiJava className="tool" />,
-            javascript: <SiJavascript className="tool" />,
+            java: <SiJava className="tool" style={{ color: "#ec2025" }} />,
+            javascript: (
+                <SiJavascript
+                    className="tool"
+                    style={{ color: "#f7e018", backgroundColor: "black" }}
+                />
+            ),
             python: <SiPython className="tool" />,
-            html: <SiHtml5 className="tool" />,
-            css: <SiCss3 className="tool" />,
-            react: <SiReact className="tool" />,
-            reactnative: <SiReact className="tool" />,
-            node: <SiNodeDotJs className="tool" />,
+            html: <SiHtml5 className="tool" style={{ color: "#e44d26" }} />,
+            css: <SiCss3 className="tool" style={{ color: "#379ad6" }} />,
+            react: <SiReact className="tool" style={{ color: "#7ddfff" }} />,
+            reactnative: (
+                <SiReact className="tool" style={{ color: "#7ddfff" }} />
+            ),
+            node: <SiNodeDotJs className="tool" style={{ color: "#689f63" }} />,
             linux: <SiLinux className="tool" />,
             jest: <SiJest className="tool" />,
-            c: <SiCodio className="tool" />,
+            c: <SiCodio className="tool" style={{ color: "#5c6bc0" }} />,
             ruby: <DiRuby className="tool" />,
             django: <DiDjango className="tool" />,
-            mongodb: <SiMongodb className="tool" />,
+            mongodb: (
+                <SiMongodb className="tool" style={{ color: "#50aa4c" }} />
+            ),
             googlecloud: <SiGooglecloud className="tool" />,
             mocha: <SiMocha className="tool" />,
             bootstrap: <SiBootstrap className="tool" />,

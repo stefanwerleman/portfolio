@@ -55,6 +55,7 @@ const projects = [
             "javascript",
             "react",
             "bootstrap",
+            "css",
             "node",
             "googlecloud",
             "linux",

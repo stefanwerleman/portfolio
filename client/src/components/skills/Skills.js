@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./Skills.css";
 
 class Skills extends React.Component {
     render() {
         return (
             <div id="skills">
-                <Container style={styles.container} fluid>
+                <Container id="skills-container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Technical Skills</p>
@@ -19,19 +20,15 @@ class Skills extends React.Component {
                                 languages. Whenever I work on web applications I
                                 rely on <strong>JavaScript</strong> or{" "}
                                 <strong>Django</strong> with their respective
-                                frameworks. <br />
-                                For programming competitions or algorithms and
-                                data structures, I heavily use{" "}
+                                frameworks. For programming competitions or
+                                algorithms and data structures, I heavily use{" "}
                                 <strong>Java</strong> because that is the
                                 language I am most proficient in. Whenever I{" "}
-                                <br />
                                 need the most performance I use{" "}
                                 <strong>C</strong>, however I am starting lean
                                 more towards <strong>C++</strong> for
                                 performance. For APIs I mostly use{" "}
-                                <strong>Google Cloud Technologies</strong>,{" "}
-                                <br />
-                                the{" "}
+                                <strong>Google Cloud Technologies</strong>, the{" "}
                                 <a
                                     href="https://github.com/KnightHacks-GMSJ/AllThingsBooks"
                                     target="_blank"
