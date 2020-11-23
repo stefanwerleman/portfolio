@@ -9,7 +9,7 @@ class Skills extends React.Component {
                 <Container id="skills-container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Technical Skills</p>
+                            <p className="display-4">Skills</p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
