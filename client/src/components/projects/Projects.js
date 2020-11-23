@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Button, Collapse } from "react-bootstrap";
+import {
+    Container,
+    Row,
+    Col,
+    Button,
+    Collapse,
+    ButtonGroup,
+} from "react-bootstrap";
 import Project from "../project/Project";
 import projectList from "../projectObjects/projectObjects";
 import "./Projects.css";
@@ -101,7 +108,9 @@ class Projects extends React.Component {
                         id="button-container"
                         className="justify-content-md-center"
                     >
-                        {this.toggleButton(isExpanded)}
+                        <ButtonGroup bsPrefix="btn-group">
+                            {this.toggleButton(isExpanded)}
+                        </ButtonGroup>
                     </Row>
                 </Container>
             </div>
