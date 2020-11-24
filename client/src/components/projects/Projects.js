@@ -104,11 +104,8 @@ class Projects extends React.Component {
                             ))}
                         </Row>
                     </Collapse>
-                    <Row
-                        id="button-container"
-                        className="justify-content-md-center"
-                    >
-                        <ButtonGroup bsPrefix="btn-group">
+                    <Row id="button-row" className="justify-content-md-center">
+                        <ButtonGroup id="button-container" bsPrefix="btn-group">
                             {this.toggleButton(isExpanded)}
                         </ButtonGroup>
                     </Row>

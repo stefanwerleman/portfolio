@@ -20,7 +20,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -41,7 +41,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -62,7 +62,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -83,7 +83,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -104,7 +104,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -125,7 +125,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -148,7 +148,7 @@
         font-size: larger;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -169,7 +169,7 @@
         font-size: large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -190,7 +190,7 @@
         font-size: x-large;
     }
 
-    #button-container {
+    #button-row {
         display: flex;
         flex-direction: row;
         justify-content: center;
