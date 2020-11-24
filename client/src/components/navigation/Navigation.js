@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import Resume from "./Resume.pdf";
+import "./Navigation.css";
 
 import { Link } from "react-scroll";
 

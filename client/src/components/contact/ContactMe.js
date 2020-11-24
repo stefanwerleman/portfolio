@@ -100,7 +100,7 @@ class ContactMe extends React.Component {
     render() {
         return (
             <div id="contact">
-                <Container style={styles.container} fluid>
+                <Container id="contact-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p className="display-4">Contact Me</p>
@@ -131,12 +131,6 @@ class ContactMe extends React.Component {
 }
 
 const styles = {
-    container: {
-        backgroundColor: "#0d2c5a",
-        color: "white",
-        paddingTop: "5.20%",
-        paddingBottom: "4.5%",
-    },
     mainLine: { borderColor: "#5b9bbc", borderWidth: 5 },
 };
 

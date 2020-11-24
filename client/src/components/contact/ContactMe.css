@@ -1,6 +1,12 @@
+#contact-container {
+    background-color: #0d2c5a;
+    color: white;
+    padding-top: 5.2%;
+    padding-bottom: 4.5%;
+}
+
 #form-container {
     display: flex;
     flex-direction: column;
-
     width: 55%;
 }

@@ -7,7 +7,6 @@ import Experience from "./components/experience/Experience";
 import ContactMe from "./components/contact/ContactMe";
 import Skills from "./components/skills/Skills";
 import Education from "./components/education/Education";
-import "./App.css";
 
 class App extends React.Component {
     render() {
