@@ -46,7 +46,8 @@ class ContactMe extends React.Component {
                     <Form.Row>
                         <Form.Group id="name-group" as={Col}>
                             <Form.Control
-                                id="name"
+                                id="name-input"
+                                type="text"
                                 placeholder="Name"
                                 onChange={handleChange}
                                 isInvalid={!!errors.name}
@@ -59,7 +60,7 @@ class ContactMe extends React.Component {
                     <Form.Row>
                         <Form.Group id="email-group" as={Col}>
                             <Form.Control
-                                id="email"
+                                id="email-input"
                                 type="email"
                                 placeholder="Email"
                                 onChange={handleChange}
@@ -73,7 +74,7 @@ class ContactMe extends React.Component {
                     <Form.Row>
                         <Form.Group id="message-group" as={Col}>
                             <Form.Control
-                                id="message"
+                                id="message-input"
                                 as="textarea"
                                 rows="8"
                                 placeholder="Message"
@@ -85,13 +86,20 @@ class ContactMe extends React.Component {
                             </Form.Control.Feedback>
                         </Form.Group>
                     </Form.Row>
-                    <Row className="justify-content-md-center">
+                    <Form.Row
+                        id="button-row"
+                        className="justify-content-md-center"
+                    >
                         <Form.Group>
-                            <Button type="submit" variant="info">
+                            <Button
+                                id="send-button"
+                                type="submit"
+                                variant="info"
+                            >
                                 Send
                             </Button>
                         </Form.Group>
-                    </Row>
+                    </Form.Row>
                 </Form>
             )}
         </Formik>
@@ -103,25 +111,27 @@ class ContactMe extends React.Component {
                 <Container id="contact-container" fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Contact Me</p>
+                            <p id="contact-title" className="display-4">
+                                Contact Me
+                            </p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p>
+                            <p id="contact-text">
                                 If you are interested or looking for a Software
                                 Engineer for an internship position. Drop me an
                                 email at{" "}
                                 <strong>stefanwerleman@yahoo.com</strong> or
-                                fill out the form below <br />
-                                and I will get back to you as soon as possible.
+                                fill out the form below and I will get back to
+                                you as soon as possible.
                             </p>
                         </Col>
                     </Row>
 
                     <br />
-                    <Row className="justify-content-md-center">
+                    <Row id="email-row" className="justify-content-md-center">
                         {this.emailForm()}
                     </Row>
                 </Container>
