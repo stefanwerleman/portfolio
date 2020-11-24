@@ -48,6 +48,7 @@ class Project extends React.Component {
     };
 
     render() {
+        // TODO: Bring this to Root component when ready, because Skill component will need this.
         const toolDict = {
             java: <SiJava className="tool" style={{ color: "#ec2025" }} />,
             javascript: (

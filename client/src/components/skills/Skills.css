@@ -4,3 +4,13 @@
     padding-right: 7.2%;
     padding-bottom: 12.13%;
 }
+
+#skills-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skills-text-row {
+    margin-bottom: 17px;
+}
