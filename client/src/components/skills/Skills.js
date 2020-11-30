@@ -8,6 +8,7 @@ class Skills extends React.Component {
     state = {
         skills: SkillList,
     };
+
     render() {
         const { skills } = this.state;
 
@@ -16,7 +17,9 @@ class Skills extends React.Component {
                 <Container id="skills-container" style={styles.container} fluid>
                     <Row className="justify-content-md-center">
                         <Col md="auto">
-                            <p className="display-4">Skills</p>
+                            <p id="skills-title" className="display-4">
+                                Skills
+                            </p>
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
@@ -71,8 +74,6 @@ class Skills extends React.Component {
 
 const styles = {
     container: {
-        paddingTop: "5.20%",
-        paddingBottom: "12.13%",
         backgroundColor: "#eee",
     },
     mainLine: {
