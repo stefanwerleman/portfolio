@@ -41,14 +41,14 @@ const skills = [
         langs: ["cpp"],
         header: "C++",
         text:
-            "This was probably one of the most difficult languages I had to learn but this language has a lot value in it. I am starting to code in this language for my programming competitions because of its performance.",
+            "This was probably one of the most difficult languages I had to learn but this language has a lot value in it. I am starting to code in this language for my programming competitions for performance reasons.",
     },
     {
         id: uuid(),
         langs: ["ruby"],
         header: "Ruby",
         text:
-            "Some quick example text to build on the card title and make up the bulk of the card's content. Some more quick example text.",
+            "This language is new to me, so I only have some beginner level projects in this language. The main thing I want to learn with this language is the Ruby on Rails framework.",
     },
     {
         id: uuid(),
