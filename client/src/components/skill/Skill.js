@@ -22,6 +22,8 @@ import {
     SiMicrosoftexcel,
     SiMicrosoftpowerpoint,
     SiWindows,
+    SiNpm,
+    SiJupyter,
 } from "react-icons/si";
 import "./Skill.css";
 
@@ -36,6 +38,9 @@ class Skill extends React.Component {
                 />
             ),
             python: <SiPython className="tool" style={{ color: "#008397" }} />,
+            jupyter: (
+                <SiJupyter className="tool" style={{ color: "#f37821" }} />
+            ),
             html: <SiHtml5 className="tool" style={{ color: "#e44d26" }} />,
             css: <SiCss3 className="tool" style={{ color: "#379ad6" }} />,
             react: <SiReact className="tool" style={{ color: "#7ddfff" }} />,
@@ -65,6 +70,12 @@ class Skill extends React.Component {
             ),
             cpp: <SiCplusplus className="tool" style={{ color: "#649ad2" }} />,
             github: <GoMarkGithub className="tool" />,
+            npm: (
+                <SiNpm
+                    className="tool"
+                    style={{ color: "#cc3534", fontSize: "150%" }}
+                />
+            ),
             word: (
                 <SiMicrosoftword
                     className="tool"

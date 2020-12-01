@@ -24,8 +24,8 @@ const skills = [
     },
     {
         id: uuid(),
-        langs: ["python", "django"],
-        header: "Python & Django",
+        langs: ["python", "django", "jupyter"],
+        header: "Python, Django & Jupyter",
         text:
             "This is one of my favorite programming languages because of how powerful and open-source it is. I am currently learning Data Science and Machine Learning with this language. I will be making a data science based mobile application soon in this language. I am also using Jupyter Notebook to analyze data for my Physics with Calculus Lab.",
     },
@@ -63,6 +63,13 @@ const skills = [
         header: "Node.js",
         text:
             "I mainly use Node.js to develop my server or RestAPI for all my web applications. With Node.js, I use Express.js for all routing purposes.",
+    },
+    {
+        id: uuid(),
+        langs: ["npm"],
+        header: "NPM",
+        text:
+            "This my favorite package manager to run my dev environmnent and to download various packages and APIs.",
     },
     {
         id: uuid(),

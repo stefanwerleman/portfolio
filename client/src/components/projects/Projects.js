@@ -76,7 +76,9 @@ class Projects extends React.Component {
                                 Hackathons, or coursework for some of my
                                 classes. Projects for some of my courses will
                                 not be available publicly on GitHub for Academic
-                                Integrity Reasons.
+                                Integrity Reasons. Links to application or
+                                GitHub repositories will be on the top-right of
+                                every project.
                             </p>
                             <br />
                         </Col>

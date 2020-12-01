@@ -127,7 +127,7 @@ const styles = {
     container: { paddingBottom: 25, height: "100%" },
     card: { backgroundColor: "#eee", borderWidth: 0, height: "100%" },
     description: { color: "#39689b" },
-    githublink: { marginRight: 7, color: "black" },
+    githublink: { color: "black", marginRight: 7 },
     link: { marginRight: 7 },
 };
 
