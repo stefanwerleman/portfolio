@@ -64,7 +64,11 @@ class Skills extends React.Component {
                     </Row>
                     <Row id="skills-row">
                         {skills.map((skill) => (
-                            <Skill key={skill.id} skill={skill} />
+                            <Skill
+                                key={skill.id}
+                                skill={skill}
+                                tools={this.props.tools}
+                            />
                         ))}
                     </Row>
                 </Container>

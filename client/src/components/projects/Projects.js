@@ -89,9 +89,21 @@ class Projects extends React.Component {
                         lg={2}
                         className="justify-content-md-center"
                     >
-                        <Project key={projects[0].id} project={projects[0]} />
-                        <Project key={projects[1].id} project={projects[1]} />
-                        <Project key={projects[2].id} project={projects[2]} />
+                        <Project
+                            key={projects[0].id}
+                            project={projects[0]}
+                            tools={this.props.tools}
+                        />
+                        <Project
+                            key={projects[1].id}
+                            project={projects[1]}
+                            tools={this.props.tools}
+                        />
+                        <Project
+                            key={projects[2].id}
+                            project={projects[2]}
+                            tools={this.props.tools}
+                        />
                     </Row>
                     <Collapse id="projects-collapse" in={isExpanded}>
                         <Row
@@ -102,7 +114,11 @@ class Projects extends React.Component {
                             style={{ paddingBottom: 75 }}
                         >
                             {otherProjects.map((project) => (
-                                <Project key={project.id} project={project} />
+                                <Project
+                                    key={project.id}
+                                    project={project}
+                                    tools={this.props.tools}
+                                />
                             ))}
                         </Row>
                     </Collapse>
