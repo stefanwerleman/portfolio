@@ -47,13 +47,14 @@ class Experience extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p id="experience-text">
-                                Currently work 30 hours a week. Perform auto
-                                detailing services on various vehicles and am
-                                responsible for the sales of detail sercives and
-                                products. This is a part-time job to support
-                                myself and my living expenses. This job really
-                                helped with my interpersonal skils at a
-                                professional level.
+                                Currently work 30 hours a week and perform auto
+                                detailing services on various vehicles. I am
+                                also responsible for the sales of detail
+                                sercives and products. This is a part-time job
+                                to support myself and pay my living expenses.
+                                This job really helped with my interpersonal
+                                skills at a professional level because of how
+                                much I interact with customers.
                             </p>
                         </Col>
                     </Row>

@@ -43,8 +43,8 @@ class AboutMe extends React.Component {
                                 to provide optimal results at the company I work
                                 for in my career. I am a very diligent and
                                 detail-oriented individual that always strives
-                                for success. I hope to bring these qualities to
-                                an internship.
+                                to stay on the cutting-edge of technology. I
+                                hope to bring these qualities to an internship.
                                 <br />
                                 <br />
                                 If you are interested, you can view some of my{" "}

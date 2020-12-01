@@ -47,33 +47,46 @@ class Education extends React.Component {
                     <Row className="justify-content-md-center">
                         <Col md="auto">
                             <p id="education-text">
-                                Studied Algorithms and Data Structures, Discrete
-                                Mathematics, Web Development, and Computer
-                                Architecture. Here I have gained a strong
-                                foundation in computing, mathematical theory of
-                                computing, and different programming pardigms. I
-                                learned the core fundamentals of algorithms,
-                                data structures, and problem solving with the C
-                                and Java programming languages.
+                                At UCF, I studied <strong>Algorithms</strong>{" "}
+                                and <strong>Data Structures</strong>, Discrete
+                                Mathematics, <strong>Web Development</strong>,
+                                and Computer Architecture. Here I have gained a
+                                strong foundation in computing, mathematical
+                                theory of computing, and different programming
+                                pardigms. I learned the core fundamentals of
+                                algorithms, data structures, and problem solving
+                                with the <strong>C</strong> and{" "}
+                                <strong>Java</strong> programming languages.
+                                <br />
+                                <br />
+                                In the Fall of 2020, I took this full-stack web
+                                development course where I learned to develop a
+                                web application using the MERN stack{" "}
+                                <strong>
+                                    (MongoDB, ExpressJS, ReactJS, and NodeJs)
+                                </strong>
+                                .
                                 <br />
                                 <br />
                                 In the Spring of 2020, I took a competitive
                                 programming course that allowed me to practice
-                                and improve on my problem-solving skills,
-                                algorithms, and data structures. This course put
-                                me in a competitive environment with individual,
-                                team, and online contests. Online contests were
-                                used frequently to prepare for the in-class
-                                contests, such as CodeForces, Google Code Jam,
-                                Kattis, and UCF's programming team practice
-                                contests.
+                                and improve on my{" "}
+                                <strong>problem-solving</strong> skills,
+                                algorithms, and data structures. Online contests
+                                were used frequently to prepare for the in-class
+                                contests, such as <strong>CodeForces</strong>,{" "}
+                                <strong>Google Code Jam</strong>, Kattis, and
+                                UCF's programming team practice contests.
                                 <br />
                                 <br />
                                 Now I am currently taking a functional
-                                programming class where I am learning Haskell
-                                and Erlang. I am also starting to learn Data
-                                Science to continue on to one of my favorite
-                                topics, Machine Learning.
+                                programming class where I am learning{" "}
+                                <strong>Haskell</strong> and{" "}
+                                <strong>Erlang</strong>. I am also starting to
+                                learn <strong>Data Science</strong> and{" "}
+                                <strong>Machine Learning</strong> using{" "}
+                                <strong>Python</strong>
+                                with its special libraries.
                             </p>
                         </Col>
                     </Row>

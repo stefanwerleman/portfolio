@@ -40,8 +40,9 @@ class Skills extends React.Component {
                                 need the most performance I use{" "}
                                 <strong>C</strong>, however I am starting lean
                                 more towards <strong>C++</strong> for
-                                performance. For APIs I mostly use{" "}
-                                <strong>Google Cloud Technologies</strong>, the{" "}
+                                performance. I mostly use{" "}
+                                <strong>Google Cloud Technologies</strong> to
+                                find APIs for most of my applications, the{" "}
                                 <a
                                     href="https://github.com/KnightHacks-GMSJ/AllThingsBooks"
                                     target="_blank"

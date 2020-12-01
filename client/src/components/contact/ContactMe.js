@@ -123,9 +123,15 @@ class ContactMe extends React.Component {
                                 If you are interested or looking for a Software
                                 Engineer for an internship position. Drop me an
                                 email at{" "}
-                                <strong>stefanwerleman@yahoo.com</strong> or
-                                fill out the form below and I will get back to
-                                you as soon as possible.
+                                <a
+                                    id="email-link"
+                                    href="mailto:stefanwerleman@yahoo.com"
+                                    style={{ color: "#5b9bbc" }}
+                                >
+                                    <strong>stefanwerleman@yahoo.com</strong>
+                                </a>{" "}
+                                or fill out the form below and I will get back
+                                to you as soon as possible.
                             </p>
                         </Col>
                     </Row>

@@ -73,10 +73,10 @@ class Projects extends React.Component {
                             <p id="project-text">
                                 Some of these projects consist of web
                                 applications for internship challenges,
-                                Hackathons, or as coursework from some of my
-                                classes. The projects that are from some of my
-                                courses will not be available publicly on GitHub
-                                for Academic Integrity Guidelines by UCF.
+                                Hackathons, or coursework for some of my
+                                classes. Projects for some of my courses will
+                                not be available publicly on GitHub for Academic
+                                Integrity Reasons.
                             </p>
                             <br />
                         </Col>
