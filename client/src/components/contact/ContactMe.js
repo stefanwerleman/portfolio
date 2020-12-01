@@ -48,6 +48,7 @@ class ContactMe extends React.Component {
                             <Form.Control
                                 id="name-input"
                                 type="text"
+                                name="name"
                                 placeholder="Name"
                                 onChange={handleChange}
                                 isInvalid={!!errors.name}
@@ -62,6 +63,7 @@ class ContactMe extends React.Component {
                             <Form.Control
                                 id="email-input"
                                 type="email"
+                                name="email"
                                 placeholder="Email"
                                 onChange={handleChange}
                                 isInvalid={!!errors.name}
@@ -75,6 +77,7 @@ class ContactMe extends React.Component {
                         <Form.Group id="message-group" as={Col}>
                             <Form.Control
                                 id="message-input"
+                                name="message"
                                 as="textarea"
                                 rows="8"
                                 placeholder="Message"
