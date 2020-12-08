@@ -5,6 +5,13 @@
     padding-bottom: 24.13%;
 }
 
+#experience-title,
+#experience-company,
+#experience-position,
+#experience-info {
+    text-align: center;
+}
+
 /* Moto G4 and Galaxy S5 */
 @media (max-width: 361px) and (max-height: 641px) and (min-width: 360px) and (min-height: 640px) {
     /* Experience */
@@ -274,5 +281,93 @@
 
     #experience-text {
         font-size: x-large;
+    }
+}
+
+/* *Landscape Media Queries */
+/* Moto G4 and Galaxy S5*/
+@media (max-width: 641px) and (max-height: 361px) and (min-width: 640px) and (min-height: 360px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Pixel 2 */
+@media (max-width: 732px) and (max-height: 412px) and (min-width: 731px) and (min-height: 411px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Pixel 2 XL */
+@media (max-width: 824px) and (max-height: 412px) and (min-width: 823px) and (min-height: 411px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Iphone 5/SE*/
+@media (max-width: 569px) and (max-height: 321px) and (min-width: 568px) and (min-height: 320px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Iphone 6/7/8 */
+@media (max-width: 668px) and (max-height: 376px) and (min-width: 667px) and (min-height: 375px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Iphone 6/7/8 Plus*/
+@media (max-width: 737px) and (max-height: 415px) and (min-width: 736px) and (min-height: 414px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Iphone 10 */
+@media (max-width: 813px) and (max-height: 376px) and (min-width: 812px) and (min-height: 375px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
+    }
+}
+
+/* Ipad */
+@media (max-width: 1025px) and (max-height: 769px) and (min-width: 1024px) and (min-height: 768px) {
+    #experience-container {
+        padding-top: 8%;
+        padding-bottom: 37.5%;
+    }
+}
+
+/* Ipad Pro */
+@media (max-width: 1367px) and (max-height: 1025px) and (min-width: 1366px) and (min-height: 1024px) {
+    #experience-container {
+        padding-top: 8%;
+        padding-bottom: 45%;
+    }
+}
+
+/* Surface Duo */
+@media (max-width: 721px) and (max-height: 541px) and (min-width: 720px) and (min-height: 540px) {
+    #experience-container {
+        padding-top: 9%;
+    }
+}
+
+/* Galaxy Fold */
+@media (max-width: 654px) and (max-height: 281px) and (min-width: 653px) and (min-height: 280px) {
+    #experience-container {
+        padding-top: 9%;
+        padding-bottom: 9%;
     }
 }
