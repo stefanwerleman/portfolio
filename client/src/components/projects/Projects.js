@@ -63,7 +63,7 @@ class Projects extends React.Component {
             <div id="projects">
                 <Container id="projects-container" fluid>
                     <Row id="title-row" className="justify-content-md-center">
-                        <Col md="auto">
+                        <Col id="projects-title-container" md="auto">
                             <p className="display-4">Projects</p>
                             <hr style={styles.mainLine} />
                         </Col>
@@ -83,12 +83,7 @@ class Projects extends React.Component {
                             <br />
                         </Col>
                     </Row>
-                    <Row
-                        id="project-row"
-                        xl={3}
-                        lg={2}
-                        className="justify-content-md-center"
-                    >
+                    <Row id="project-row" xl={3} lg={2} sm={1}>
                         <Project
                             key={projects[0].id}
                             project={projects[0]}
@@ -110,6 +105,7 @@ class Projects extends React.Component {
                             id="more-projects-row"
                             xl={3}
                             lg={2}
+                            sm={1}
                             className="justify-content-md-center"
                             style={{ paddingBottom: 75 }}
                         >
@@ -122,7 +118,7 @@ class Projects extends React.Component {
                             ))}
                         </Row>
                     </Collapse>
-                    <Row id="button-row" className="justify-content-md-center">
+                    <Row id="button-row" className="justify-content-sm-center">
                         <ButtonGroup id="button-container" bsPrefix="btn-group">
                             {this.toggleButton(isExpanded)}
                         </ButtonGroup>
