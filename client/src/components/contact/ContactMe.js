@@ -22,6 +22,8 @@ class ContactMe extends React.Component {
                 if (res.status !== 200) {
                     event.preventDefault();
                 }
+                const emailForm = document.forms["form-container"];
+                emailForm.reset();
                 console.log("Email sent");
             })
             .catch((error) => {
@@ -40,7 +42,7 @@ class ContactMe extends React.Component {
             id="formik-container"
             validationSchema={this.schema}
             onSubmit={this.handleEmail}
-            initialValues={{}}
+            initialValues={{ name: "", email: "", message: "" }}
         >
             {({ handleSubmit, errors, handleChange }) => (
                 <Form id="form-container" onSubmit={handleSubmit} noValidate>
