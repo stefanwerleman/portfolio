@@ -37,6 +37,7 @@ class ContactMe extends React.Component {
 
     emailForm = () => (
         <Formik
+            id="formik-container"
             validationSchema={this.schema}
             onSubmit={this.handleEmail}
             initialValues={{}}
@@ -91,7 +92,7 @@ class ContactMe extends React.Component {
                     </Form.Row>
                     <Form.Row
                         id="button-row"
-                        className="justify-content-md-center"
+                        className="justify-content-sm-center"
                     >
                         <Form.Group>
                             <Button
@@ -120,8 +121,8 @@ class ContactMe extends React.Component {
                             <hr style={styles.mainLine} />
                         </Col>
                     </Row>
-                    <Row className="justify-content-md-center">
-                        <Col md="auto">
+                    <Row className="justify-content-sm-center">
+                        <Col id="contact-text-col" md="auto">
                             <p id="contact-text">
                                 If you are interested or looking for a Software
                                 Engineer for an internship position. Drop me an
@@ -140,7 +141,7 @@ class ContactMe extends React.Component {
                     </Row>
 
                     <br />
-                    <Row id="email-row" className="justify-content-md-center">
+                    <Row id="email-row" className="justify-content-sm-center">
                         {this.emailForm()}
                     </Row>
                 </Container>
