@@ -94,6 +94,10 @@
     #nav-links {
         font-size: larger;
     }
+
+    #navigation {
+        height: 95px;
+    }
 }
 /* Surface Duo */
 @media (max-width: 721px) and (max-height: 541px) and (min-width: 720px) and (min-height: 540px) {
