@@ -196,3 +196,23 @@
         font-size: 20px;
     }
 }
+
+/* *Media Queries for Landscape Mode on all Mobile Phones */
+
+/* Moto G4 and Galaxy S5*/
+@media (max-width: 641px) and (max-height: 361px) and (min-width: 640px) and (min-height: 360px) {
+    #container {
+        padding-top: 14.6%;
+        padding-bottom: 14.6%;
+        padding-left: 22%;
+    }
+
+    #name {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #sub {
+        font-size: 20px;
+    }
+}
