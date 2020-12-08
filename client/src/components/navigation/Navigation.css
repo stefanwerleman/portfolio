@@ -1,3 +1,9 @@
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /* Moto G4 and Galaxy S5 */
 @media (max-width: 361px) and (max-height: 641px) and (min-width: 360px) and (min-height: 640px) {
     #navigation {
@@ -58,5 +64,16 @@
 @media (max-width: 281px) and (max-height: 654px) and (min-width: 280px) and (min-height: 653px) {
     #navigation {
         height: 95px;
+    }
+}
+
+/* *Landscape Styles */
+
+/* Moto G4 and Galaxy S5 */
+@media (max-width: 641px) and (max-height: 361px) and (min-width: 640px) and (min-height: 360px) {
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 }
