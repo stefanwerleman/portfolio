@@ -69,11 +69,41 @@
 
 /* *Landscape Styles */
 
-/* Moto G4 and Galaxy S5 */
+/* Moto G4 and Galaxy S5*/
 @media (max-width: 641px) and (max-height: 361px) and (min-width: 640px) and (min-height: 360px) {
-    #navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    #nav-links {
+        font-size: smaller;
+    }
+}
+
+/* Iphone 5/SE*/
+@media (max-width: 569px) and (max-height: 321px) and (min-width: 568px) and (min-height: 320px) {
+    #nav-links {
+        font-size: smaller;
+    }
+}
+/* Iphone 6/7/8 */
+@media (max-width: 668px) and (max-height: 376px) and (min-width: 667px) and (min-height: 375px) {
+    #nav-links {
+        font-size: smaller;
+    }
+}
+
+/* Ipad Pro */
+@media (max-width: 1367px) and (max-height: 1025px) and (min-width: 1366px) and (min-height: 1024px) {
+    #nav-links {
+        font-size: larger;
+    }
+}
+/* Surface Duo */
+@media (max-width: 721px) and (max-height: 541px) and (min-width: 720px) and (min-height: 540px) {
+    #nav-links {
+        font-size: smaller;
+    }
+}
+/* Galaxy Fold */
+@media (max-width: 654px) and (max-height: 281px) and (min-width: 653px) and (min-height: 280px) {
+    #nav-links {
+        font-size: smaller;
     }
 }

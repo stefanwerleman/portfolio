@@ -15,7 +15,7 @@ class Navigation extends React.Component {
                 className="justify-content-md-center"
                 sticky="top"
             >
-                <Nav>
+                <Nav id="nav-links">
                     <Nav.Link>
                         <Link to="about" smooth={true} duration={1000}>
                             About
