@@ -6,10 +6,10 @@ import "./ContactMe.css";
 
 const axios = require("axios");
 
-const API_URL = "http://localhost:5000";
-
 class ContactMe extends React.Component {
     handleEmail = (event) => {
+        const { URL } = this.props;
+
         let newEmail = {
             name: event.name,
             email: event.email,
@@ -17,7 +17,7 @@ class ContactMe extends React.Component {
         };
 
         axios
-            .post(API_URL + "/email", newEmail)
+            .post(URL + "/email", newEmail)
             .then((res) => {
                 if (res.status !== 200) {
                     event.preventDefault();
@@ -25,6 +25,7 @@ class ContactMe extends React.Component {
                 const emailForm = document.forms["form-container"];
                 emailForm.reset();
                 console.log("Email sent");
+                console.log(res);
             })
             .catch((error) => {
                 console.log(error);

@@ -33,6 +33,10 @@ import {
     SiJupyter,
 } from "react-icons/si";
 
+const dotenv = require("dotenv");
+dotenv.config();
+
+const API_URL = process.env.REACT_APP_SERVER_URL;
 class App extends React.Component {
     render() {
         const tools = {
@@ -113,7 +117,7 @@ class App extends React.Component {
                 <Projects tools={tools} />
                 <Education />
                 <Experience />
-                <ContactMe />
+                <ContactMe URL={API_URL} />
             </div>
         );
     }

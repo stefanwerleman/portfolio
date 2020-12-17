@@ -14,6 +14,12 @@ app.enable("trust proxy");
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+    res.json({
+        message: "Hello There - Obo Wan Kenobi",
+    });
+});
+
 app.post("/email", (req, res) => {
     let email = req.body;
 
