@@ -14,6 +14,18 @@ app.enable("trust proxy");
 app.use(express.json());
 app.use(cors());
 
+const sendEmail = async (msg) => {
+    await sgmail
+        .send(msg)
+        .then(() => {
+            console.log("Email Sent");
+        })
+        .catch((error) => {
+            console.error("Failed to send email");
+            console.error(error);
+        });
+};
+
 app.get("/", (req, res) => {
     res.json({
         message: "Hello There - Obo Wan Kenobi",
@@ -38,18 +50,6 @@ app.post("/email", (req, res) => {
         message: "Successfully Submitted",
     });
 });
-
-function sendEmail(msg) {
-    sgmail
-        .send(msg)
-        .then(() => {
-            console.log("Email Sent");
-        })
-        .catch((error) => {
-            console.error("Failed to send email");
-            console.error(error);
-        });
-}
 
 app.listen(PORT, () => {
     console.log(`Listening on http://localhost:${PORT}`);
