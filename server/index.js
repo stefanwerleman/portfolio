@@ -43,7 +43,8 @@ app.post("/email", (req, res) => {
         html: `<h3><strong>${email.name}</strong></h3><h3><a>${email.email}</a></h3><br></br><p>${email.message}</p>`,
     };
 
-    sendEmail(msg);
+    // NOTE: SendGrid API Call
+    // sendEmail(msg);
 
     res.json({
         status: 200,
