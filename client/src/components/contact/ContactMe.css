@@ -47,6 +47,11 @@
 
     #contact-text {
         font-size: large;
+        /* text-align: center; */
+    }
+
+    #contact-anchor {
+        background-color: red;
     }
 
     #button-row {
