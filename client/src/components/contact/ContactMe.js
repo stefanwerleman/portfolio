@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./ContactMe.css";
 
-const axios = require("axios");
+// const axios = require("axios");
 
 class ContactMe extends React.Component {
     // NOTE: Will put up form later
@@ -155,6 +155,7 @@ class ContactMe extends React.Component {
                                 id="contact-anchor"
                                 href="https://github.com/stefanwerleman"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Button
                                     id="contact-button"
@@ -170,6 +171,7 @@ class ContactMe extends React.Component {
                                 id="contact-anchor"
                                 href="https://www.linkedin.com/in/stefanwerleman/"
                                 target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 <Button
                                     id="contact-button"
