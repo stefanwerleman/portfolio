@@ -1,4 +1,4 @@
-import uuid from "uuid";
+import {v1 as uuid} from "uuid";
 
 let count = 0;
 
