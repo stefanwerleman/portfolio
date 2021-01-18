@@ -1,5 +1,11 @@
+#contact{
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+    background-size: cover;
+}
+
 #contact-container {
     background-color: #0d2c5a;
+    opacity: 0.9;
     color: white;
     padding-top: 3.2%;
     padding-left: 7.2%;
