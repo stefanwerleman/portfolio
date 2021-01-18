@@ -49,7 +49,7 @@ class AboutMe extends React.Component {
                                 <br />
                                 If you are interested, you can view some of my{" "}
                                 <strong>
-                                    <a href="#">
+                                    <a href="#/projects">
                                         <Link
                                             to="projects"
                                             smooth={true}
@@ -62,7 +62,7 @@ class AboutMe extends React.Component {
                                 in down below and feel free to reach out to me
                                 on LinkedIn or send me an{" "}
                                 <strong>
-                                    <a href="#">
+                                    <a href="#/contact">
                                         <Link
                                             to="contact"
                                             smooth={true}
@@ -91,7 +91,7 @@ class AboutMe extends React.Component {
                                     <FaLinkedin style={styles.linkedin} />
                                 </a>
                                 <a
-                                    href="#"
+                                    href="#/contact"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
