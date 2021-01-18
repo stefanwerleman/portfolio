@@ -132,10 +132,6 @@ class ContactMe extends React.Component {
                                 possible.
                             </p>
                         </Col>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
                         <Col id="contact-button-col" md="auto">
                             <a
                                 id="contact-anchor"
