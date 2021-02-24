@@ -1,0 +1,41 @@
+#job {
+	margin-top: 45px;
+}
+
+#job-container {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 8px;
+	height: 100%;
+}
+
+#logo-container {
+	height: 100%;
+}
+
+#company-logo {
+	width: 70px;
+	height: 70px;
+}
+
+#job-info-container {
+	margin-left: 40px;
+}
+
+#position {
+	margin-bottom: 10px;
+}
+
+#company {
+	margin-bottom: 0;
+}
+
+#date {
+	margin-bottom: 0;
+	font-weight: lighter;
+}
+
+#location {
+	margin-bottom: 10px;
+	font-weight: lighter;
+}
