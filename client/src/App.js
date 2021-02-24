@@ -5,7 +5,7 @@ import Front from './components/front/Front';
 import AboutMe from './components/about/AboutMe';
 import Projects from './components/projects/Projects';
 import Experience from './components/experience/Experience';
-import ContactMe from './components/contact/ContactMe';
+import ContactMe from './components/contacts/ContactMe';
 import Skills from './components/skills/Skills';
 import Education from './components/education/Education';
 import { GoMarkGithub } from 'react-icons/go';
