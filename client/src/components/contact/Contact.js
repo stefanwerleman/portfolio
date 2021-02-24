@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 
-import { Container, Image } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class Contact extends React.Component {
 	render() {

@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbe9efbd.chunk.css",
-    "main.js": "/static/js/main.c144fa1f.chunk.js",
-    "main.js.map": "/static/js/main.c144fa1f.chunk.js.map",
+    "main.css": "/static/css/main.888b9e99.chunk.css",
+    "main.js": "/static/js/main.3e5854fa.chunk.js",
+    "main.js.map": "/static/js/main.3e5854fa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
     "static/css/2.ae9f1eb3.chunk.css": "/static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.dc181f55.chunk.js": "/static/js/2.dc181f55.chunk.js",
-    "static/js/2.dc181f55.chunk.js.map": "/static/js/2.dc181f55.chunk.js.map",
+    "static/js/2.03305c95.chunk.js": "/static/js/2.03305c95.chunk.js",
+    "static/js/2.03305c95.chunk.js.map": "/static/js/2.03305c95.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ae9f1eb3.chunk.css.map": "/static/css/2.ae9f1eb3.chunk.css.map",
-    "static/css/main.cbe9efbd.chunk.css.map": "/static/css/main.cbe9efbd.chunk.css.map",
-    "static/js/2.dc181f55.chunk.js.LICENSE.txt": "/static/js/2.dc181f55.chunk.js.LICENSE.txt",
+    "static/css/main.888b9e99.chunk.css.map": "/static/css/main.888b9e99.chunk.css.map",
+    "static/js/2.03305c95.chunk.js.LICENSE.txt": "/static/js/2.03305c95.chunk.js.LICENSE.txt",
     "static/media/Resume.5158d349.pdf": "/static/media/Resume.5158d349.pdf",
+    "static/media/carwashpalacelogo.f4d16ea5.png": "/static/media/carwashpalacelogo.f4d16ea5.png",
     "static/media/profile-pic.f00be177.png": "/static/media/profile-pic.f00be177.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/css/2.ae9f1eb3.chunk.css",
-    "static/js/2.dc181f55.chunk.js",
-    "static/css/main.cbe9efbd.chunk.css",
-    "static/js/main.c144fa1f.chunk.js"
+    "static/js/2.03305c95.chunk.js",
+    "static/css/main.888b9e99.chunk.css",
+    "static/js/main.3e5854fa.chunk.js"
   ]
 }
