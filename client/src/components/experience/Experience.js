@@ -23,10 +23,16 @@ class Experience extends React.Component {
 					</Row>
 					<Row id='job-list-row'>
 						{jobs.map((job, index) => {
-							if (index !== 0 && index !== jobs.length - 1) {
+							if (index === 0) {
 								return (
 									<div>
+										<Job key={job.id} job={job} />
 										<hr id='job-divider' />
+									</div>
+								);
+							} else if (index !== jobs.length - 1) {
+								return (
+									<div>
 										<Job key={job.id} job={job} />
 										<hr id='job-divider' />
 									</div>
