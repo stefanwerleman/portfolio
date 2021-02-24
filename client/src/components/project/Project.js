@@ -69,7 +69,7 @@ class Project extends React.Component {
 const styles = {
 	container: { paddingBottom: 25, height: '100%' },
 	card: { backgroundColor: '#E6E9EF', borderWidth: 0, height: '100%' },
-	description: { color: '#39689b' },
+	description: { color: '#3D58B8' },
 	githublink: { color: 'black', marginRight: 7 },
 	link: { marginRight: 7 },
 };

@@ -32,7 +32,7 @@ const styles = {
 		color: 'white',
 	},
 	container: {
-		backgroundColor: '#0d2c5a',
+		backgroundColor: '#151E3F',
 		opacity: 0.7,
 	},
 	mainLine: {
