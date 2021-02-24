@@ -2,15 +2,17 @@
 	padding-top: 5.2%;
 	padding-left: 7.2%;
 	padding-right: 7.2%;
-	padding-bottom: 12.13%;
+	padding-bottom: 28.13%;
 	background-color: #e6e9ef;
 }
 
-#education-title,
-#education-school,
-#education-major,
-#education-info {
-	text-align: center;
+#school-list-row {
+	display: flex;
+	flex-direction: column;
+}
+
+#school-divider {
+	width: 56.5%;
 }
 
 /* Moto G4 and Galaxy S5 */

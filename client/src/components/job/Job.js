@@ -16,7 +16,7 @@ class Job extends React.Component {
 
 		return (
 			<div id='job'>
-				<Container id='job-container'>
+				<Container id='job-container' fluid>
 					<div id='logo-container'>
 						<Image
 							id='company-logo'

@@ -1,29 +1,28 @@
-#job-container {
+#school {
+	width: 100%;
+}
+
+#school-container {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 8px;
 	width: 75%;
+	margin-bottom: 8px;
+}
+
+#school-logo-container {
 	height: 100%;
 }
 
-#logo-container {
-	height: 100%;
-}
-
-#job-info-container {
+#school-info-container {
 	margin-left: 40px;
 }
 
-#company-logo {
-	width: 100px;
-	height: 100px;
-}
-
-#position {
+#school {
 	margin-bottom: 10px;
 }
 
-#company {
+#degree,
+#gpa {
 	margin-bottom: 0;
 }
 
@@ -32,7 +31,7 @@
 	font-weight: lighter;
 }
 
-#location {
+#activities {
 	margin-bottom: 10px;
 	font-weight: lighter;
 }
