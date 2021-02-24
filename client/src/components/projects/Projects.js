@@ -127,7 +127,7 @@ class Projects extends React.Component {
 
 const styles = {
 	mainLine: {
-		borderColor: '#ff1b1c',
+		borderColor: '#D7263D',
 		borderWidth: 5,
 	},
 };

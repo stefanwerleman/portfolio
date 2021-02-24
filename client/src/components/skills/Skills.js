@@ -87,10 +87,10 @@ class Skills extends React.Component {
 
 const styles = {
 	container: {
-		backgroundColor: '#eee',
+		backgroundColor: '#E6E9EF',
 	},
 	mainLine: {
-		borderColor: '#FF1B1C',
+		borderColor: '#D7263D',
 		borderWidth: 5,
 	},
 	smallLines: { borderColor: '#39689b' },

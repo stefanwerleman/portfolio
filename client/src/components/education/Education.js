@@ -96,7 +96,7 @@ class Education extends React.Component {
 
 const styles = {
 	mainLine: {
-		borderColor: '#FF1B1C',
+		borderColor: '#D7263D',
 		borderWidth: 5,
 	},
 };

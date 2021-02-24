@@ -109,7 +109,7 @@ const styles = {
 	github: { color: 'black' },
 	email: { color: 'black' },
 	mainLine: {
-		borderColor: '#FF1B1C',
+		borderColor: '#D7263D',
 		borderWidth: 5,
 	},
 };

@@ -5,6 +5,9 @@ import './Experience.css';
 // Child Component
 import Job from '../job/Job';
 
+// Job List
+import jobs from '../jobList/jobList';
+
 class Experience extends React.Component {
 	render() {
 		return (
@@ -18,8 +21,20 @@ class Experience extends React.Component {
 							<hr style={styles.mainLine} />
 						</Col>
 					</Row>
-					<Row>
-						<Job />
+					<Row id='job-list-row'>
+						{jobs.map((job, index) => {
+							if (index !== 0 && index !== jobs.length - 1) {
+								return (
+									<div>
+										<hr id='job-divider' />
+										<Job key={job.id} job={job} />
+										<hr id='job-divider' />
+									</div>
+								);
+							} else {
+								return <Job key={job.id} job={job} />;
+							}
+						})}
 					</Row>
 				</Container>
 			</div>
@@ -29,7 +44,7 @@ class Experience extends React.Component {
 
 const styles = {
 	mainLine: {
-		borderColor: '#FF1B1C',
+		borderColor: '#D7263D',
 		borderWidth: 5,
 	},
 };
