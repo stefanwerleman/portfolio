@@ -1,5 +1,5 @@
 import React from 'react';
-import './School.css';
+// import './School.css';
 
 import { Container, Image } from 'react-bootstrap';
 

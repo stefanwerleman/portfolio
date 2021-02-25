@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './ContactMe.css';
+// import './ContactMe.css';
 
 // const axios = require("axios");
 
@@ -120,68 +120,55 @@ class ContactMe extends React.Component {
 	render() {
 		return (
 			<div id='contact'>
-				<Container id='contact-container' fluid>
-					<Row className='justify-content-md-center'>
-						<Col md='auto'>
-							<p id='contact-title' className='display-4'>
-								Contact Me
-							</p>
-							<hr style={styles.mainLine} />
-						</Col>
-					</Row>
-					<Row id='contact-row' className='justify-content-sm-center'>
-						<p id='contact-text'>
-							If you are looking for a Software Engineer for an
-							internship position, feel free to drop me an email
-							and I will get back to you as soon as possible.
-						</p>
-						<div id='contact-list'>
-							{contacts.map((contact, index) => {
-								if (index === 0) {
-									return (
-										<div className='contact-object'>
-											<Contact
-												key={contact.id}
-												contact={contact}
-											/>
-											<hr id='contact-divider' />
-										</div>
-									);
-								} else if (index !== contacts.length - 1) {
-									return (
-										<div className='contact-object'>
-											<Contact
-												key={contact.id}
-												contact={contact}
-											/>
-											<hr id='contact-divider' />
-										</div>
-									);
-								} else {
-									return (
-										<Contact
-											key={contact.id}
-											contact={contact}
-										/>
-									);
-								}
-							})}
-						</div>
-					</Row>
-					{/*
+				<p id='contact-title' className='display-4'>
+					Contact Me
+				</p>
+				<hr />
+
+				<p id='contact-text'>
+					If you are looking for a Software Engineer for an internship
+					position, feel free to drop me an email and I will get back
+					to you as soon as possible.
+				</p>
+				<div id='contact-list'>
+					{contacts.map((contact, index) => {
+						if (index === 0) {
+							return (
+								<div className='contact-object'>
+									<Contact
+										key={contact.id}
+										contact={contact}
+									/>
+									<hr id='contact-divider' />
+								</div>
+							);
+						} else if (index !== contacts.length - 1) {
+							return (
+								<div className='contact-object'>
+									<Contact
+										key={contact.id}
+										contact={contact}
+									/>
+									<hr id='contact-divider' />
+								</div>
+							);
+						} else {
+							return (
+								<Contact key={contact.id} contact={contact} />
+							);
+						}
+					})}
+				</div>
+
+				{/*
                     NOTE: Will put up form later
                     <br />
                      <Row id="email-row" className="justify-content-sm-center">
                         { {this.emailForm()} }
                     </Row> */}
-				</Container>
 			</div>
 		);
 	}
 }
-
-const styles = {
-	mainLine: { borderColor: '#5b9bbc', borderWidth: 5 },
-};
 
 export default ContactMe;

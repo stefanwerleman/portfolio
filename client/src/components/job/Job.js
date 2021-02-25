@@ -1,5 +1,5 @@
 import React from 'react';
-import './Job.css';
+// import './Job.css';
 
 import { Container, Image } from 'react-bootstrap';
 

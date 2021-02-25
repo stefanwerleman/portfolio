@@ -1,19 +1,14 @@
 import React from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import Resume from './Resume.pdf';
-import './Navigation.css';
+// import './Navigation.css';
 
 import { Link } from 'react-scroll';
 
 class Navigation extends React.Component {
 	render() {
 		return (
-			<Navbar
-				id='navigation'
-				style={styles.navbar}
-				variant='dark'
-				className='justify-content-md-center'
-				sticky='top'>
+			<Navbar id='navigation' style={styles.navbar} variant='dark'>
 				<Nav id='nav-links'>
 					<Nav.Link>
 						<Link to='about' smooth={true} duration={1000}>
@@ -58,6 +53,6 @@ class Navigation extends React.Component {
 	}
 }
 
-const styles = { navbar: { backgroundColor: '#151E3F', top: -1 } };
+const styles = { navbar: { backgroundColor: '#151E3F' } };
 
 export default Navigation;
