@@ -110,7 +110,7 @@ class App extends React.Component {
 			),
 		};
 		return (
-			<div id='root' style={{ position: 'absolute' }}>
+			<div id='root'>
 				<Front />
 				<Navigation />
 				<AboutMe />
