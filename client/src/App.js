@@ -114,7 +114,7 @@ class App extends React.Component {
 		return (
 			<div id='app'>
 				<Front />
-				{/* <Navigation /> */}
+				<Navigation />
 				{/* <AboutMe /> */}
 				{/* <Skills tools={tools} /> */}
 				{/* <Projects tools={tools} /> */}
