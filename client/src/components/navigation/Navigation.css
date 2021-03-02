@@ -2,46 +2,46 @@
 	background-color: #151e3f;
 	position: sticky;
 	top: 0;
-	display: flex;
+}
+
+.nav-links,
+.nav-links.responsive {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 .nav-links {
-	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 }
 
 #menu {
 	display: none;
-	user-select: none;
 }
 
 #menu-icon {
 	font-size: x-large;
 }
 
-.nav-list {
+.menu-list {
 	display: flex;
 	flex-direction: row;
 }
 
 /* TODO: Change to burger menu on the right for all small mobile apps */
 @media screen and (max-width: 600px) {
-	.nav-links {
-		justify-content: space-between;
+	.menu-list {
+		display: none;
 	}
 
-	.nav-links.responsive {
+	.nav-links.responsive.navbar-nav {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.nav-list {
-		display: none;
-	}
-
-	.nav-list.responsive {
+	.menu-list.responsive {
 		display: flex;
 		flex-direction: column;
 		align-items: center;

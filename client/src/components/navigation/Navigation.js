@@ -16,10 +16,12 @@ function Navigation() {
 	return (
 		<Navbar id='navigation' variant='dark'>
 			<Nav className={active ? 'nav-links responsive' : 'nav-links'}>
-				<Nav.Link id='menu' onClick={toggleMenu}>
-					<FiMenu id='menu-icon' />
-				</Nav.Link>
-				<div className={active ? 'nav-list responsive' : 'nav-list'}>
+				<div>
+					<Nav.Link id='menu' onClick={toggleMenu}>
+						<FiMenu id='menu-icon' />
+					</Nav.Link>
+				</div>
+				<div className={active ? 'menu-list responsive' : 'menu-list'}>
 					<Nav.Link className='links'>
 						<Link to='about' smooth={true} duration={1000}>
 							About
@@ -51,6 +53,7 @@ function Navigation() {
 						</Link>
 					</Nav.Link>
 				</div>
+
 				<Button
 					id='resume-button'
 					variant='outline-light'
