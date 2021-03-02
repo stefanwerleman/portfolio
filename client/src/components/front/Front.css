@@ -3,6 +3,7 @@
 
 	/* Mutable */
 	background-size: cover;
+	height: 100%;
 }
 
 #front-container {
@@ -12,10 +13,12 @@
 	text-align: center;
 	background-color: #151e3f;
 	opacity: 0.7;
+	height: 100%;
+	width: 100%;
 
 	/* Mutable */
-	padding-top: 16%;
-	padding-bottom: 16%;
+	padding-top: 15%;
+	padding-bottom: 15%;
 }
 
 #name-container {
@@ -26,7 +29,7 @@
 
 #front-divider {
 	margin-top: 0px;
-	width: 33%;
+	width: 100%;
 	border-width: 5px;
 	border-color: white;
 }
@@ -36,32 +39,4 @@
 	color: white;
 }
 
-/** MotoG4 and  Galaxy S5 */
-@media (max-width: 360px) and (max-height: 640px) {
-	#front {
-		background-size: auto;
-	}
-
-	#front-container {
-		padding-top: 37%;
-		padding-bottom: 37%;
-	}
-}
-
-/** Pixel 2  */
-/** Pixel 2 XL */
-/** Iphone 5/SE */
-/** Iphone 6/7/8 */
-/** Iphone 6/7/8/ Plus */
-
-/** Iphone X */
-@media (max-width: 375px) and (max-height: 812px) {
-	#name-container {
-		font-size: 4em;
-	}
-}
-
-/** Ipad */
-/** Ipad Pro */
-/** Surface Duo  */
-/** Galaxy Fold */
+/** Responsiveness */

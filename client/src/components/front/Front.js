@@ -7,10 +7,12 @@ class Front extends React.Component {
 		return (
 			<div id='front'>
 				<div id='front-container'>
-					<p id='name-container'>STEFAN WERLEMAN</p>
-					<hr id='front-divider' />
+					<div id='title-container'>
+						<p id='name-container'>STEFAN WERLEMAN</p>
+						<hr id='front-divider' />
 
-					<p id='front-sub'>COMPUTER SCIENCE STUDENT AT UCF</p>
+						<p id='front-sub'>COMPUTER SCIENCE STUDENT AT UCF</p>
+					</div>
 				</div>
 			</div>
 		);

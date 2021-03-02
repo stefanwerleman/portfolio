@@ -113,7 +113,7 @@ class App extends React.Component {
 		};
 		return (
 			<div id='app'>
-				{/* <Front /> */}
+				<Front />
 				<Navigation />
 				{/* <AboutMe /> */}
 				{/* <Skills tools={tools} /> */}
