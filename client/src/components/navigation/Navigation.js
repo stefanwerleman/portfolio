@@ -15,38 +15,38 @@ class Navigation extends React.Component {
 					<Nav.Link id='menu'>
 						<FiMenu id='menu-icon' />
 					</Nav.Link>
-					<Nav.Link>
-						<Link to='about' smooth={true} duration={1000}>
-							About
-						</Link>
-					</Nav.Link>
-					<Nav.Link>
-						{' '}
-						<Link to='skills' smooth={true} duration={1000}>
-							Skills
-						</Link>
-					</Nav.Link>
-					<Nav.Link>
-						<Link to='projects' smooth={true} duration={1000}>
-							Projects
-						</Link>
-					</Nav.Link>
-					<Nav.Link>
-						<Link to='education' smooth={true} duration={1000}>
-							Education
-						</Link>
-					</Nav.Link>
-					<Nav.Link>
-						<Link to='experience' smooth={true} duration={1000}>
-							Experience
-						</Link>
-					</Nav.Link>
-					<Nav.Link>
-						<Link to='contact' smooth={true} duration={1000}>
-							Contact
-						</Link>
-					</Nav.Link>
-
+					<div id='nav-list'>
+						<Nav.Link className='links'>
+							<Link to='about' smooth={true} duration={1000}>
+								About
+							</Link>
+						</Nav.Link>
+						<Nav.Link className='links'>
+							<Link to='skills' smooth={true} duration={1000}>
+								Skills
+							</Link>
+						</Nav.Link>
+						<Nav.Link className='links'>
+							<Link to='projects' smooth={true} duration={1000}>
+								Projects
+							</Link>
+						</Nav.Link>
+						<Nav.Link className='links'>
+							<Link to='education' smooth={true} duration={1000}>
+								Education
+							</Link>
+						</Nav.Link>
+						<Nav.Link className='links'>
+							<Link to='experience' smooth={true} duration={1000}>
+								Experience
+							</Link>
+						</Nav.Link>
+						<Nav.Link className='links'>
+							<Link to='contact' smooth={true} duration={1000}>
+								Contact
+							</Link>
+						</Nav.Link>
+					</div>
 					<Button
 						variant='outline-light'
 						href={Resume}

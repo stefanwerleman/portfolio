@@ -15,9 +15,25 @@
 	display: none;
 }
 
+#nav-list {
+	display: flex;
+	flex-direction: row;
+	transition: max-height 0.2s ease-out;
+}
+
 /* TODO: Change to burger menu on the right for all small mobile apps */
 
 /** Responsiveness  */
+@media screen and (max-width: 600px) {
+	#menu {
+		display: block;
+		user-select: auto;
+	}
+
+	#nav-list {
+		display: none;
+	}
+}
 
 /** Moto G4 and Galaxy S5 */
 /** Pixel 2 */
