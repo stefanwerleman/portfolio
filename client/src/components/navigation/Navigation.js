@@ -15,7 +15,7 @@ function Navigation() {
 
 	return (
 		<Navbar id='navigation' variant='dark'>
-			<Nav className='nav-links'>
+			<Nav className={active ? 'nav-links responsive' : 'nav-links'}>
 				<Nav.Link id='menu' onClick={toggleMenu}>
 					<FiMenu id='menu-icon' />
 				</Nav.Link>
