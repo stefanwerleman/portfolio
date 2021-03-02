@@ -1,62 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, Button } from 'react-bootstrap';
 import Resume from './Resume.pdf';
 import './Navigation.css';
 
 import { FiMenu } from 'react-icons/fi';
 
-import { Link } from 'react-scroll';
+// Child Components
+import NavMenu from '../navmenu/NavMenu';
 
-class Navigation extends React.Component {
-	render() {
-		return (
-			<Navbar id='navigation' variant='dark'>
-				<Nav id='nav-links'>
-					<Nav.Link id='menu'>
-						<FiMenu id='menu-icon' />
-					</Nav.Link>
-					<div id='nav-list'>
-						<Nav.Link className='links'>
-							<Link to='about' smooth={true} duration={1000}>
-								About
-							</Link>
-						</Nav.Link>
-						<Nav.Link className='links'>
-							<Link to='skills' smooth={true} duration={1000}>
-								Skills
-							</Link>
-						</Nav.Link>
-						<Nav.Link className='links'>
-							<Link to='projects' smooth={true} duration={1000}>
-								Projects
-							</Link>
-						</Nav.Link>
-						<Nav.Link className='links'>
-							<Link to='education' smooth={true} duration={1000}>
-								Education
-							</Link>
-						</Nav.Link>
-						<Nav.Link className='links'>
-							<Link to='experience' smooth={true} duration={1000}>
-								Experience
-							</Link>
-						</Nav.Link>
-						<Nav.Link className='links'>
-							<Link to='contact' smooth={true} duration={1000}>
-								Contact
-							</Link>
-						</Nav.Link>
-					</div>
-					<Button
-						variant='outline-light'
-						href={Resume}
-						target='_blank'>
-						Resume
-					</Button>
-				</Nav>
-			</Navbar>
-		);
-	}
+function Navigation() {
+	const [active, setActive] = useState(false);
+
+	const toggleMenu = () => {
+		setActive(!active);
+	};
+
+	return (
+		<Navbar id='navigation' variant='dark'>
+			<Nav id='nav-links'>
+				<Nav.Link id='menu' onClick={toggleMenu}>
+					<FiMenu id='menu-icon' />
+				</Nav.Link>
+				<NavMenu />
+				<Button
+					id='resume-button'
+					variant='outline-light'
+					href={Resume}
+					target='_blank'>
+					Resume
+				</Button>
+			</Nav>
+		</Navbar>
+	);
 }
 
 export default Navigation;

@@ -1,39 +1,37 @@
 #navigation {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 	background-color: #151e3f;
 	position: sticky;
 	top: 0;
+	display: flex;
 }
 
 #nav-links {
-	overflow: hidden;
+	width: 100%;
+	flex-direction: row;
+	justify-content: center;
+	/* background-color: red; */
 }
 
 #menu {
 	display: none;
+	user-select: none;
 }
 
-#nav-list {
-	display: flex;
-	flex-direction: row;
-	transition: max-height 0.2s ease-out;
+#menu-icon {
+	font-size: x-large;
 }
 
 /* TODO: Change to burger menu on the right for all small mobile apps */
-
-/** Responsiveness  */
 @media screen and (max-width: 600px) {
+	#nav-links {
+		justify-content: space-between;
+	}
+
 	#menu {
 		display: block;
-		user-select: auto;
-	}
-
-	#nav-list {
-		display: none;
 	}
 }
+/** Responsiveness  */
 
 /** Moto G4 and Galaxy S5 */
 /** Pixel 2 */

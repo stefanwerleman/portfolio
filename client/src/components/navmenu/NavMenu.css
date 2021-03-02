@@ -1,0 +1,11 @@
+.nav-list {
+	display: flex;
+	flex-direction: row;
+}
+
+/** Responsiveness  */
+@media screen and (max-width: 600px) {
+	.nav-list {
+		display: none;
+	}
+}
