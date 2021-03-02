@@ -5,11 +5,10 @@
 	display: flex;
 }
 
-#nav-links {
+.nav-links {
 	width: 100%;
 	flex-direction: row;
 	justify-content: center;
-	/* background-color: red; */
 }
 
 #menu {
@@ -21,14 +20,34 @@
 	font-size: x-large;
 }
 
+.nav-list {
+	display: flex;
+	flex-direction: row;
+}
+
 /* TODO: Change to burger menu on the right for all small mobile apps */
 @media screen and (max-width: 600px) {
-	#nav-links {
+	.nav-links {
 		justify-content: space-between;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.nav-list.responsive {
+		float: none;
+		display: block;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
 	}
 
 	#menu {
 		display: block;
+	}
+
+	#resume-button {
 	}
 }
 /** Responsiveness  */
