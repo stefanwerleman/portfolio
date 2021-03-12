@@ -115,8 +115,8 @@ class App extends React.Component {
 			<div id='app'>
 				<Front />
 				<Navigation />
-				{/* <AboutMe /> */}
-				{/* <Skills tools={tools} /> */}
+				<AboutMe />
+				<Skills tools={tools} />
 				{/* <Projects tools={tools} /> */}
 				{/* <Education /> */}
 				{/* <Experience /> */}
