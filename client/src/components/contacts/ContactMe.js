@@ -119,53 +119,58 @@ class ContactMe extends React.Component {
 
 	render() {
 		return (
-			<div id='contact'>
-				<p id='contact-title' className='display-4'>
-					Contact Me
-				</p>
-				<hr />
-
-				<p id='contact-text'>
-					If you are looking for a Software Engineer for an internship
-					position, feel free to drop me an email and I will get back
-					to you as soon as possible.
-				</p>
-				<div id='contact-list'>
-					{contacts.map((contact, index) => {
-						if (index === 0) {
-							return (
-								<div className='contact-object'>
-									<Contact
-										key={contact.id}
-										contact={contact}
-									/>
-									<hr id='contact-divider' />
-								</div>
-							);
-						} else if (index !== contacts.length - 1) {
-							return (
-								<div className='contact-object'>
-									<Contact
-										key={contact.id}
-										contact={contact}
-									/>
-									<hr id='contact-divider' />
-								</div>
-							);
-						} else {
-							return (
-								<Contact key={contact.id} contact={contact} />
-							);
-						}
-					})}
+			<div id='contact' className='sectionContainer'>
+				<div className='sectionTitleContainer'>
+					<p className='sectionTitle'>Contact Me</p>
+					<hr className='divider' />
 				</div>
 
-				{/*
+				<div className='sectionBodyContainer'>
+					<p id='contact-text'>
+						If you are looking for a Software Engineer for an
+						internship position, feel free to drop me an email and I
+						will get back to you as soon as possible.
+					</p>
+					<div id='contact-list'>
+						{contacts.map((contact, index) => {
+							if (index === 0) {
+								return (
+									<div className='contact-object'>
+										<Contact
+											key={contact.id}
+											contact={contact}
+										/>
+										<hr id='contact-divider' />
+									</div>
+								);
+							} else if (index !== contacts.length - 1) {
+								return (
+									<div className='contact-object'>
+										<Contact
+											key={contact.id}
+											contact={contact}
+										/>
+										<hr id='contact-divider' />
+									</div>
+								);
+							} else {
+								return (
+									<Contact
+										key={contact.id}
+										contact={contact}
+									/>
+								);
+							}
+						})}
+					</div>
+
+					{/*
                     NOTE: Will put up form later
                     <br />
                      <Row id="email-row" className="justify-content-sm-center">
                         { {this.emailForm()} }
                     </Row> */}
+				</div>
 			</div>
 		);
 	}

@@ -1,3 +1,4 @@
+/** 4K First */
 #front {
 	background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg');
 
@@ -10,34 +11,141 @@
 #front-container {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: center;
 	text-align: center;
 	background-color: #151e3f;
 	opacity: 0.7;
 	height: 100%;
-	width: 100%;
+}
 
-	/* Mutable */
-	padding-top: 15%;
-	padding-bottom: 15%;
+#title-container {
+	margin-top: -100px;
 }
 
 #name-container {
 	color: white;
-	font-size: 4.4em;
+	font-size: 5em;
 	margin-bottom: 0px;
 }
 
 #front-divider {
 	margin-top: 0px;
-	width: 100%;
-	border-width: 5px;
+	width: 700px;
+	border-width: 3px;
 	border-color: white;
 }
 
 #front-sub {
-	font-size: 1.7em;
+	font-size: 2.3em;
 	color: white;
 }
 
 /** Responsiveness */
+/** Monitor XL */
+@media (max-width: 1920px) {
+	#name-container {
+		font-size: 4.4em;
+	}
+
+	#front-divider {
+		width: 650px;
+	}
+
+	#front-sub {
+		font-size: 1.7em;
+	}
+}
+
+/** Laptop Large and XL */
+@media (max-width: 1650px) {
+	#name-container {
+		font-size: 3.5em;
+	}
+
+	#front-divider {
+		width: 500px;
+	}
+
+	#front-sub {
+		font-size: 1.6em;
+	}
+}
+
+/** Laptop */
+@media (max-width: 1024px) {
+	#name-container {
+		font-size: 3.5em;
+	}
+
+	#front-divider {
+		width: 500px;
+		border-width: 3px;
+	}
+
+	#front-sub {
+		font-size: 1.4em;
+	}
+}
+
+/** Tablet */
+@media (max-width: 768px) {
+	#name-container {
+		font-size: 3.2em;
+	}
+
+	#front-divider {
+		width: 450px;
+	}
+
+	#front-sub {
+		font-size: 1.4em;
+	}
+}
+
+/** Mobile XL */
+@media (max-width: 600px) {
+	#name-container {
+		font-size: 2.5em;
+	}
+
+	#front-divider {
+		width: 350px;
+		border-width: 2px;
+	}
+
+	#front-sub {
+		font-size: 1.2em;
+	}
+}
+
+/** Mobile Large */
+@media (max-width: 425px) {
+	#name-container {
+		font-size: 2em;
+	}
+
+	#front-divider {
+		width: 300px;
+		border-width: 2px;
+	}
+
+	#front-sub {
+		font-size: 1em;
+	}
+}
+
+/** Mobile Medium */
+@media (max-width: 375px) {
+	#name-container {
+		font-size: 1.8em;
+	}
+
+	#front-divider {
+		width: 260px;
+		border-width: 2px;
+	}
+
+	#front-sub {
+		font-size: 0.9em;
+	}
+}

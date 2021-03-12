@@ -12,31 +12,33 @@ import schools from '../schoolList/schoolList';
 class Education extends React.Component {
 	render() {
 		return (
-			<div id='education'>
-				<p id='education-title' className='display-4'>
-					Education
-				</p>
-				<hr />
+			<div id='education' className='sectionContainer'>
+				<div className='sectionTitleContainer'>
+					<p className='sectionTitle'>Education</p>
+					<hr className='divider' />
+				</div>
 
-				{schools.map((school, index) => {
-					if (index === 0) {
-						return (
-							<div>
-								<School key={school.id} school={school} />
-								<hr id='school-divider' />
-							</div>
-						);
-					} else if (index !== schools.length - 1) {
-						return (
-							<div>
-								<School key={school.id} school={school} />
-								<hr id='school-divider' />
-							</div>
-						);
-					} else {
-						return <School key={school.id} school={school} />;
-					}
-				})}
+				<div className='sectionBodyContainer'>
+					{schools.map((school, index) => {
+						if (index === 0) {
+							return (
+								<div>
+									<School key={school.id} school={school} />
+									<hr id='school-divider' />
+								</div>
+							);
+						} else if (index !== schools.length - 1) {
+							return (
+								<div>
+									<School key={school.id} school={school} />
+									<hr id='school-divider' />
+								</div>
+							);
+						} else {
+							return <School key={school.id} school={school} />;
+						}
+					})}
+				</div>
 			</div>
 		);
 	}

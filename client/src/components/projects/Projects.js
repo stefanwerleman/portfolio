@@ -58,47 +58,51 @@ class Projects extends React.Component {
 		const otherProjects = this.getOtherProjects(projects);
 
 		return (
-			<div id='projects'>
-				<p className='display-4'>Projects</p>
-				<hr />
+			<div id='projects' className='sectionContainer'>
+				<div className='sectionTitleContainer'>
+					<p className='sectionTitle'>Projects</p>
+					<hr className='divider' />
+				</div>
 
-				<p id='project-text'>
-					I am always pushing myself to do more projects and learn new
-					things. These projects below may or may not have their own
-					GitHub repositories because some of these were course
-					projects and I don't want to violate academic regulations.
-					This list may contain upcoming project ideas I have in mind
-					in the near future. Enjoy!
-				</p>
-				<br />
+				<div className='sectionBodyContainer'>
+					<p id='project-text'>
+						I am always pushing myself to do more projects and learn
+						new things. These projects below may or may not have
+						their own GitHub repositories because some of these were
+						course projects and I don't want to violate academic
+						regulations. This list may contain upcoming project
+						ideas I have in mind in the near future. Enjoy!
+					</p>
+					<br />
 
-				<Project
-					key={projects[0].id}
-					project={projects[0]}
-					tools={this.props.tools}
-				/>
-				<Project
-					key={projects[1].id}
-					project={projects[1]}
-					tools={this.props.tools}
-				/>
-				<Project
-					key={projects[2].id}
-					project={projects[2]}
-					tools={this.props.tools}
-				/>
-
-				{otherProjects.map((project) => (
 					<Project
-						key={project.id}
-						project={project}
+						key={projects[0].id}
+						project={projects[0]}
 						tools={this.props.tools}
 					/>
-				))}
+					<Project
+						key={projects[1].id}
+						project={projects[1]}
+						tools={this.props.tools}
+					/>
+					<Project
+						key={projects[2].id}
+						project={projects[2]}
+						tools={this.props.tools}
+					/>
 
-				<ButtonGroup id='button-container'>
-					{this.toggleButton(isExpanded)}
-				</ButtonGroup>
+					{otherProjects.map((project) => (
+						<Project
+							key={project.id}
+							project={project}
+							tools={this.props.tools}
+						/>
+					))}
+
+					<ButtonGroup id='button-container'>
+						{this.toggleButton(isExpanded)}
+					</ButtonGroup>
+				</div>
 			</div>
 		);
 	}

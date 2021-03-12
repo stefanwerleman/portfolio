@@ -114,13 +114,15 @@ class App extends React.Component {
 		return (
 			<div id='app'>
 				<Front />
-				<Navigation />
-				<AboutMe />
-				<Skills tools={tools} />
-				{/* <Projects tools={tools} /> */}
-				{/* <Education /> */}
-				{/* <Experience /> */}
-				{/* <ContactMe URL={API_URL} /> */}
+				<div id='sections'>
+					<Navigation />
+					<AboutMe />
+					<Skills tools={tools} />
+					<Projects tools={tools} />
+					<Education />
+					<Experience />
+					<ContactMe URL={API_URL} />
+				</div>
 			</div>
 		);
 	}
