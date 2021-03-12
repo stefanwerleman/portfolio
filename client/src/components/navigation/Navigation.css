@@ -1,5 +1,7 @@
 #navigation {
 	background-color: #151e3f;
+
+	/* Sticks NavBar to the when scrolling */
 	position: sticky;
 	top: 0;
 }

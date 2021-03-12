@@ -6,5 +6,5 @@ html,
 	font-family: Roboto;
 
 	/* Helps with sticky top NavBar */
-	overflow: scroll;
+	overflow: auto;
 }
