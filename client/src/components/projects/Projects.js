@@ -75,29 +75,31 @@ class Projects extends React.Component {
 					</p>
 					<br />
 
-					<Project
-						key={projects[0].id}
-						project={projects[0]}
-						tools={this.props.tools}
-					/>
-					<Project
-						key={projects[1].id}
-						project={projects[1]}
-						tools={this.props.tools}
-					/>
-					<Project
-						key={projects[2].id}
-						project={projects[2]}
-						tools={this.props.tools}
-					/>
-
-					{otherProjects.map((project) => (
+					<div id='projects-lists'>
 						<Project
-							key={project.id}
-							project={project}
+							key={projects[0].id}
+							project={projects[0]}
 							tools={this.props.tools}
 						/>
-					))}
+						<Project
+							key={projects[1].id}
+							project={projects[1]}
+							tools={this.props.tools}
+						/>
+						<Project
+							key={projects[2].id}
+							project={projects[2]}
+							tools={this.props.tools}
+						/>
+
+						{otherProjects.map((project) => (
+							<Project
+								key={project.id}
+								project={project}
+								tools={this.props.tools}
+							/>
+						))}
+					</div>
 
 					<ButtonGroup id='button-container'>
 						{this.toggleButton(isExpanded)}
