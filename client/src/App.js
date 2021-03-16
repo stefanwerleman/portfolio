@@ -118,10 +118,10 @@ class App extends React.Component {
 					<Navigation />
 					<AboutMe />
 					<Skills tools={tools} />
-					<Projects tools={tools} />
-					<Education />
-					<Experience />
-					<ContactMe URL={API_URL} />
+					{/* <Projects tools={tools} /> */}
+					{/* <Education /> */}
+					{/* <Experience /> */}
+					{/* <ContactMe URL={API_URL} /> */}
 				</div>
 			</div>
 		);

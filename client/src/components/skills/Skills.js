@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SkillList from '../skillList/skillList';
 import Skill from '../skill/Skill';
-// import './Skills.css';
+import './Skills.css';
 
 class Skills extends React.Component {
 	state = {
