@@ -3,6 +3,7 @@
 	/* Sticks NavBar to the when scrolling */
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 .nav-links,

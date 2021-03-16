@@ -9,7 +9,7 @@ import {
 } from 'react-bootstrap';
 import Project from '../project/Project';
 import projectList from '../projectObjects/projectObjects';
-// import './Projects.css';
+import './Projects.css';
 
 class Projects extends React.Component {
 	state = {
