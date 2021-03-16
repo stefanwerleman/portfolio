@@ -66,6 +66,7 @@ class AboutMe extends React.Component {
 						</p>
 						<h3 id='links'>
 							<a
+								className='link'
 								href='https://github.com/stefanwerleman'
 								target='_blank'
 								rel='noopener noreferrer'>
@@ -73,12 +74,14 @@ class AboutMe extends React.Component {
 							</a>
 
 							<a
+								className='link'
 								href='https://www.linkedin.com/in/stefanwerleman'
 								target='_blank'
 								rel='noopener noreferrer'>
 								<FaLinkedin />
 							</a>
 							<a
+								className='link'
 								href='#/contact'
 								target='_blank'
 								rel='noopener noreferrer'>
