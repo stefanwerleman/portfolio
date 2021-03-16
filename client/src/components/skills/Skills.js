@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import SkillList from '../skillList/skillList';
 import Skill from '../skill/Skill';
 import './Skills.css';
@@ -62,13 +61,15 @@ class Skills extends React.Component {
 						, to enhance all my applications.
 					</p>
 
-					{skills.map((skill) => (
-						<Skill
-							key={skill.id}
-							skill={skill}
-							tools={this.props.tools}
-						/>
-					))}
+					<div id='skills-list'>
+						{skills.map((skill) => (
+							<Skill
+								key={skill.id}
+								skill={skill}
+								tools={this.props.tools}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		);
