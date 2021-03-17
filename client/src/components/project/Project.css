@@ -10,8 +10,19 @@
     border-width: inherit;
 }
 
+.topLink {
+    color: #000000;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
 #card-text {
     color: #3D58B8;
+}
+
+.tool {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
 @media (max-width: 600px) {

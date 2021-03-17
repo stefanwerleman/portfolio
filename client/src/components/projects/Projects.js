@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-	Container,
-	Row,
-	Col,
-	Button,
-	Collapse,
-	ButtonGroup,
-} from 'react-bootstrap';
+import { Button, Collapse, ButtonGroup } from 'react-bootstrap';
 import Project from '../project/Project';
 import projectList from '../projectObjects/projectObjects';
 import './Projects.css';
@@ -29,7 +22,7 @@ class Projects extends React.Component {
 		if (!isExpanded) {
 			return (
 				<Button
-					className='project-button'
+					className='projectButton'
 					variant='primary'
 					onClick={this.handleExpand}>
 					Show More
@@ -38,7 +31,7 @@ class Projects extends React.Component {
 		} else {
 			return (
 				<Button
-					className='project-button'
+					className='projectButton'
 					variant='outline-primary'
 					onClick={this.handleCollapse}>
 					Show Less
@@ -73,7 +66,6 @@ class Projects extends React.Component {
 						regulations. This list may contain upcoming project
 						ideas I have in mind in the near future. Enjoy!
 					</p>
-					<br />
 
 					<div id='projects-lists'>
 						<Project
@@ -101,9 +93,12 @@ class Projects extends React.Component {
 						))}
 					</div>
 
-					<ButtonGroup id='button-container'>
-						{this.toggleButton(isExpanded)}
-					</ButtonGroup>
+					{/* TODO: Fix this button */}
+					{/* <div id='button-container'>
+						<ButtonGroup id='button-group'>
+							{this.toggleButton(isExpanded)}
+						</ButtonGroup>
+					</div> */}
 				</div>
 			</div>
 		);

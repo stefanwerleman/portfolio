@@ -11,7 +11,11 @@ class Project extends React.Component {
 
 		if (dest) {
 			return (
-				<a href={dest} target='_blank' rel='noopener noreferrer'>
+				<a
+					className='topLink'
+					href={dest}
+					target='_blank'
+					rel='noopener noreferrer'>
 					<GoMarkGithub />
 				</a>
 			);
@@ -20,7 +24,11 @@ class Project extends React.Component {
 
 		if (dest) {
 			return (
-				<a href={dest} target='_blank' rel='noopener noreferrer'>
+				<a
+					className='topLink'
+					href={dest}
+					target='_blank'
+					rel='noopener noreferrer'>
 					<GoLinkExternal />
 				</a>
 			);
