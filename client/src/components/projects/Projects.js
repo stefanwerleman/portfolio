@@ -62,7 +62,7 @@ class Projects extends React.Component {
 						I am always pushing myself to do more projects and learn
 						new things. These projects below may or may not have
 						their own GitHub repositories because some of these were
-						course projects and I don't want to violate academic
+						course projects and I do not want to violate academic
 						regulations. This list may contain upcoming project
 						ideas I have in mind in the near future. Enjoy!
 					</p>
