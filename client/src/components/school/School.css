@@ -1,37 +1,52 @@
 #school {
-	width: 100%;
-}
-
-#school-container {
 	display: flex;
 	flex-direction: row;
-	width: 75%;
-	margin-bottom: 8px;
-}
-
-#school-logo-container {
-	height: 100%;
+	justify-content: center;
 }
 
 #school-info-container {
-	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin-left: 35px;
 }
 
-#school {
-	margin-bottom: 10px;
+#degree, #gpa, #date{
+	margin: 0;
 }
 
-#degree,
-#gpa {
-	margin-bottom: 0;
+#degree, #gpa, #date, #activities {
+	color: #3D58B8;
 }
 
-#date {
-	margin-bottom: 0;
-	font-weight: lighter;
+/* My Laptop */
+@media (max-width: 1536px) {
+	#school-info-contianer {
+		width: 75%;
+	}
 }
 
-#activities {
-	margin-bottom: 10px;
-	font-weight: lighter;
+@media (max-width: 600px) {
+	#school {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#school-logo-container {
+		margin-bottom: 35px;
+	}
+	
+	#school-info-container {
+		margin-left: 0;
+	}
+
+	#date {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	#school-info-container {
+		width: 100%;
+	}
 }

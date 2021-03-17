@@ -36,7 +36,10 @@ html,
 	border-color: #d7263d;
 }
 
-.sectionBodyContainer {
+.sectionBodyContainer, .schoolWorkBody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 10px;
 	font-size: 1.5em;
 }
@@ -47,7 +50,7 @@ html,
 	.sectionTitle {
 		font-size: 3.3em;
 	}
-	.sectionBodyContainer {
+	.sectionBodyContainer, .schoolWorkBody {
 		padding-top: 10px;
 		font-size: 1em;
 	}

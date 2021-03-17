@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-// import './Education.css';
+import './Education.css';
 
 // Child Component(s)
 import School from '../school/School';
@@ -22,14 +22,14 @@ class Education extends React.Component {
 					{schools.map((school, index) => {
 						if (index === 0) {
 							return (
-								<div>
+								<div className='schoolWorkBody'>
 									<School key={school.id} school={school} />
 									<hr id='school-divider' />
 								</div>
 							);
 						} else if (index !== schools.length - 1) {
 							return (
-								<div>
+								<div className='schoolWorkBody'>
 									<School key={school.id} school={school} />
 									<hr id='school-divider' />
 								</div>
