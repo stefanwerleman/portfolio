@@ -16,7 +16,7 @@
 	justify-content: center;
 }
 
-@media (max-width: 1878px) {
+@media (max-width: 1496px) {
 	#projects-lists {
 		justify-content: center;
 	}
