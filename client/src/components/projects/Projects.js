@@ -40,15 +40,8 @@ class Projects extends React.Component {
 		}
 	};
 
-	getOtherProjects = (projects) => {
-		const otherProjects = projects.filter((project) => project.number > 2);
-		return otherProjects;
-	};
-
 	render() {
 		const { isExpanded, projects } = this.state;
-
-		const otherProjects = this.getOtherProjects(projects);
 
 		return (
 			<div id='projects' className='sectionContainer'>
@@ -68,23 +61,7 @@ class Projects extends React.Component {
 					</p>
 
 					<div id='projects-lists'>
-						<Project
-							key={projects[0].id}
-							project={projects[0]}
-							tools={this.props.tools}
-						/>
-						<Project
-							key={projects[1].id}
-							project={projects[1]}
-							tools={this.props.tools}
-						/>
-						<Project
-							key={projects[2].id}
-							project={projects[2]}
-							tools={this.props.tools}
-						/>
-
-						{otherProjects.map((project) => (
+						{projects.map((project) => (
 							<Project
 								key={project.id}
 								project={project}

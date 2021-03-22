@@ -1,44 +1,74 @@
 #project {
-    width: 25rem;
-    margin-bottom: 35px;
-    margin-right: 21px;
+	margin-bottom: 35px;
 }
 
 #card-container {
-    height: 500px;
-    background-color: #E6E9EF;
-    border-width: inherit;
+	height: 600px;
+	width: 600px;
+	/* height: 500px; */
+	background-color: #e6e9ef;
+	border-width: inherit;
 }
 
 .topLink {
-    color: #000000;
-    font-size: 1.2em;
-    margin-right: 10px;
+	color: #000000;
+	font-size: 1.2em;
+	margin-right: 10px;
 }
 
 #card-text {
-    color: #3D58B8;
+	color: #3d58b8;
 }
 
 .tool {
-    margin-right: 10px;
-    font-size: 1.2em;
+	margin-right: 10px;
+	font-size: 1.2em;
 }
 
-@media (max-width: 600px) {
-    #project {
-        width: 100%;
-    }
+@media (max-width: 1920px) {
+	#card-container {
+		height: 500px;
+		width: 500px;
+	}
+}
+
+@media (max-width: 1816px) {
+	#card-container {
+		height: 450px;
+		width: 450px;
+	}
+}
+
+@media (max-width: 1650px) {
+	#card-container {
+		height: 400px;
+		width: 400px;
+	}
+}
+
+@media (max-width: 1497px) {
+	#card-container {
+		height: 450px;
+		width: 375px;
+	}
+}
+
+@media (max-width: 1345px) {
+	#card-container {
+		height: 450px;
+		width: 350px;
+	}
 }
 
 @media (max-width: 489px) {
-    #card-container {
-        height: 500px;
-    }
+	#card-container {
+		height: 500px;
+	}
 }
 
-@media (max-width: 369px) {
-    #card-container {
-        height: 600px;
-    }
+@media (max-width: 375px) {
+	#card-container {
+		width: 300px;
+		height: 600px;
+	}
 }

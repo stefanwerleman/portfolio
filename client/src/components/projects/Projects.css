@@ -16,7 +16,7 @@
 	justify-content: center;
 }
 
-@media (max-width: 1496px) {
+/* @media (max-width: 1496px) {
 	#projects-lists {
 		justify-content: center;
 	}
@@ -26,5 +26,11 @@
 	#projects-lists {
 		flex-direction: column;
 		align-items: center;
+	}
+} */
+
+@media (max-width: 834px) {
+	#projects-lists {
+		justify-content: center;
 	}
 }

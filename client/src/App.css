@@ -36,7 +36,8 @@ html,
 	border-color: #d7263d;
 }
 
-.sectionBodyContainer, .schoolWorkBody {
+.sectionBodyContainer,
+.schoolWorkBody {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -50,7 +51,8 @@ html,
 	.sectionTitle {
 		font-size: 3.3em;
 	}
-	.sectionBodyContainer, .schoolWorkBody {
+	.sectionBodyContainer,
+	.schoolWorkBody {
 		padding-top: 10px;
 		font-size: 1em;
 	}
