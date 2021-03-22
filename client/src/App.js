@@ -120,7 +120,7 @@ class App extends React.Component {
 					<Skills tools={tools} />
 					<Projects tools={tools} />
 					<Education />
-					{/* <Experience /> */}
+					<Experience />
 					{/* <ContactMe URL={API_URL} /> */}
 				</div>
 			</div>

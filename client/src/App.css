@@ -36,8 +36,7 @@ html,
 	border-color: #d7263d;
 }
 
-.sectionBodyContainer,
-.schoolWorkBody {
+.sectionBodyContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
