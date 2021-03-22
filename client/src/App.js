@@ -121,7 +121,7 @@ class App extends React.Component {
 					<Projects tools={tools} />
 					<Education />
 					<Experience />
-					{/* <ContactMe URL={API_URL} /> */}
+					<ContactMe URL={API_URL} />
 				</div>
 			</div>
 		);

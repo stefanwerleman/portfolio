@@ -1,7 +1,7 @@
 import React from 'react';
 import './School.css';
 
-import { Container, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 class School extends React.Component {
 	render() {

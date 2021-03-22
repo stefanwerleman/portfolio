@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { ImFolderOpen } from 'react-icons/im';
 import { GoMarkGithub, GoLinkExternal } from 'react-icons/go';
 import Tilt from 'react-tilt';
