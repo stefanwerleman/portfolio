@@ -11,20 +11,20 @@
 	margin-left: 35px;
 }
 
-#degree, #gpa, #date{
+#degree,
+#gpa,
+#grad-date {
 	margin: 0;
 }
 
-#degree, #gpa, #date, #activities {
-	color: #3D58B8;
+#degree,
+#gpa,
+#grad-date,
+#activities {
+	color: #3d58b8;
 }
 
 /* My Laptop */
-@media (max-width: 1536px) {
-	#school-info-contianer {
-		width: 75%;
-	}
-}
 
 @media (max-width: 600px) {
 	#school {
@@ -35,12 +35,12 @@
 	#school-logo-container {
 		margin-bottom: 35px;
 	}
-	
+
 	#school-info-container {
 		margin-left: 0;
 	}
 
-	#date {
+	#grad-date {
 		margin-bottom: 10px;
 	}
 }

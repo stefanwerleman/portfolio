@@ -29,7 +29,7 @@ class School extends React.Component {
 					<p id='school-name'>{school}</p>
 					<p id='degree'>{degree}</p>
 					<p id='gpa'>{gpa}</p>
-					<p id='date'>{date}</p>
+					<p id='grad-date'>{date}</p>
 					<p id='activities'>
 						Activities and Societies: {activities}
 					</p>

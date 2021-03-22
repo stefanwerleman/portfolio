@@ -1,7 +1,7 @@
 import React from 'react';
-// import './Job.css';
+import './Job.css';
 
-import { Container, Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 
 class Job extends React.Component {
 	render() {
@@ -16,23 +16,21 @@ class Job extends React.Component {
 
 		return (
 			<div id='job'>
-				<Container id='job-container' fluid>
-					<div id='logo-container'>
-						<Image
-							id='company-logo'
-							src={logo}
-							alt='Company Logo'
-							rounded
-						/>
-					</div>
-					<div id='job-info-container'>
-						<h6 id='position'>{position}</h6>
-						<p id='company'>{company}</p>
-						<p id='date'>{date}</p>
-						<p id='location'>{location}</p>
-						<p id='description'>{description}</p>
-					</div>
-				</Container>
+				<div id='job-logo-container'>
+					<Image
+						id='company-logo'
+						src={logo}
+						alt='Company Logo'
+						rounded
+					/>
+				</div>
+				<div id='job-info-container'>
+					<p id='position'>{position}</p>
+					<p id='company'>{company}</p>
+					<p id='date'>{date}</p>
+					<p id='location'>{location}</p>
+					<p id='description'>{description}</p>
+				</div>
 			</div>
 		);
 	}
