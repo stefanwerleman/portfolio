@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Container } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { ImFolderOpen } from 'react-icons/im';
 import { GoMarkGithub, GoLinkExternal } from 'react-icons/go';
 import Tilt from 'react-tilt';
@@ -11,8 +11,12 @@ class Project extends React.Component {
 
 		if (dest) {
 			return (
-				<a href={dest} target='_blank' rel='noopener noreferrer'>
-					<GoMarkGithub style={styles.githublink} />
+				<a
+					className='topLink'
+					href={dest}
+					target='_blank'
+					rel='noopener noreferrer'>
+					<GoMarkGithub />
 				</a>
 			);
 		}
@@ -20,8 +24,12 @@ class Project extends React.Component {
 
 		if (dest) {
 			return (
-				<a href={dest} target='_blank' rel='noopener noreferrer'>
-					<GoLinkExternal style={styles.link} />
+				<a
+					className='topLink'
+					href={dest}
+					target='_blank'
+					rel='noopener noreferrer'>
+					<GoLinkExternal />
 				</a>
 			);
 		}
@@ -34,9 +42,9 @@ class Project extends React.Component {
 		const toolDict = this.props.tools;
 
 		return (
-			<Tilt id='tilt-container' options={{ max: 2.5, scale: 1.07 }}>
-				<Container id='card-container' style={styles.container}>
-					<Card style={styles.card}>
+			<div id='project'>
+				<Tilt id='tilt-container' options={{ max: 2.5, scale: 1.07 }}>
+					<Card id='card-container'>
 						<Card.Body id='card-body'>
 							<Card.Title id='top-links' className='d-flex'>
 								<ImFolderOpen
@@ -50,9 +58,7 @@ class Project extends React.Component {
 							<Card.Subtitle id='card-title'>
 								{title}
 							</Card.Subtitle>
-							<Card.Text style={styles.description}>
-								{description}
-							</Card.Text>
+							<Card.Text id='card-text'>{description}</Card.Text>
 						</Card.Body>
 						<Card.Footer>
 							<Card.Title id='bottom-links'>
@@ -60,18 +66,10 @@ class Project extends React.Component {
 							</Card.Title>
 						</Card.Footer>
 					</Card>
-				</Container>
-			</Tilt>
+				</Tilt>
+			</div>
 		);
 	}
 }
-
-const styles = {
-	container: { paddingBottom: 25, height: '100%' },
-	card: { backgroundColor: '#E6E9EF', borderWidth: 0, height: '100%' },
-	description: { color: '#3D58B8' },
-	githublink: { color: 'black', marginRight: 7 },
-	link: { marginRight: 7 },
-};
 
 export default Project;

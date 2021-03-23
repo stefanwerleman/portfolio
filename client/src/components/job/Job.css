@@ -1,38 +1,51 @@
-#job-container {
+#job {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 8px;
-	width: 75%;
-	height: 100%;
-}
-
-#logo-container {
-	height: 100%;
+	justify-content: center;
 }
 
 #job-info-container {
-	margin-left: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin-left: 35px;
 }
 
-#company-logo {
-	width: 100px;
-	height: 100px;
-}
-
-#position {
-	margin-bottom: 10px;
-}
-
-#company {
-	margin-bottom: 0;
-}
-
+#company,
 #date {
-	margin-bottom: 0;
-	font-weight: lighter;
+	margin: 0;
 }
 
+#company,
+#date,
 #location {
-	margin-bottom: 10px;
-	font-weight: lighter;
+	color: #3d58b8;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 600px) {
+	#job {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#job-logo-container {
+		margin-bottom: 35px;
+	}
+
+	#job-info-container {
+		margin-left: 0;
+	}
+
+	#date {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	#school-info-container {
+		width: 100%;
+	}
 }

@@ -1,3 +1,82 @@
-#root {
+html,
+#body,
+#root,
+#app {
+	height: 100%;
 	font-family: Roboto;
+}
+
+#section {
+	display: flex;
+	flex-direction: column;
+}
+
+.sectionContainer {
+	padding-top: 75px;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 75px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sectionTitleContainer {
+	width: max-content;
+}
+
+/* Section Headers Style */
+.sectionTitle {
+	font-size: 4.5em;
+}
+
+.divider {
+	border-width: 5px;
+	border-color: #d7263d;
+}
+
+.sectionBodyContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 10px;
+	font-size: 1.5em;
+}
+
+/* Responsiveness */
+/* Monitor XL */
+@media (max-width: 1920px) {
+	.sectionTitle {
+		font-size: 3.3em;
+	}
+	.sectionBodyContainer,
+	.schoolWorkBody {
+		padding-top: 10px;
+		font-size: 1em;
+	}
+}
+
+/* Laptop Large and XL */
+@media (max-width: 1650px) {
+}
+
+/* Laptop */
+@media (max-width: 1024px) {
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+}
+
+/* Mobile XL */
+@media (max-width: 600px) {
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+}
+
+/* Mobile Medium */
+@media (max-width: 375px) {
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import './ContactMe.css';
 
 // const axios = require("axios");
@@ -119,17 +118,14 @@ class ContactMe extends React.Component {
 
 	render() {
 		return (
-			<div id='contact'>
-				<Container id='contact-container' fluid>
-					<Row className='justify-content-md-center'>
-						<Col md='auto'>
-							<p id='contact-title' className='display-4'>
-								Contact Me
-							</p>
-							<hr style={styles.mainLine} />
-						</Col>
-					</Row>
-					<Row id='contact-row' className='justify-content-sm-center'>
+			<div id='contact-cover'>
+				<div id='contact' className='sectionContainer'>
+					<div className='sectionTitleContainer'>
+						<p className='sectionTitle'>Contact Me</p>
+						<hr className='divider' />
+					</div>
+
+					<div className='sectionBodyContainer'>
 						<p id='contact-text'>
 							If you are looking for a Software Engineer for an
 							internship position, feel free to drop me an email
@@ -167,21 +163,18 @@ class ContactMe extends React.Component {
 								}
 							})}
 						</div>
-					</Row>
+					</div>
+
 					{/*
                     NOTE: Will put up form later
                     <br />
                      <Row id="email-row" className="justify-content-sm-center">
                         { {this.emailForm()} }
                     </Row> */}
-				</Container>
+				</div>
 			</div>
 		);
 	}
 }
-
-const styles = {
-	mainLine: { borderColor: '#5b9bbc', borderWidth: 5 },
-};
 
 export default ContactMe;

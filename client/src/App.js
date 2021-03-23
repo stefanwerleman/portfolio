@@ -1,13 +1,5 @@
 import React from 'react';
 import './App.css';
-import Navigation from './components/navigation/Navigation';
-import Front from './components/front/Front';
-import AboutMe from './components/about/AboutMe';
-import Projects from './components/projects/Projects';
-import Experience from './components/experience/Experience';
-import ContactMe from './components/contacts/ContactMe';
-import Skills from './components/skills/Skills';
-import Education from './components/education/Education';
 import { GoMarkGithub } from 'react-icons/go';
 import { DiRuby, DiDjango } from 'react-icons/di';
 import {
@@ -33,6 +25,16 @@ import {
 	SiNpm,
 	SiJupyter,
 } from 'react-icons/si';
+
+// Child Components
+import Navigation from './components/navigation/Navigation';
+import Front from './components/front/Front';
+import AboutMe from './components/about/AboutMe';
+import Projects from './components/projects/Projects';
+import Experience from './components/experience/Experience';
+import ContactMe from './components/contacts/ContactMe';
+import Skills from './components/skills/Skills';
+import Education from './components/education/Education';
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -110,15 +112,17 @@ class App extends React.Component {
 			),
 		};
 		return (
-			<div id='root' style={{ position: 'absolute' }}>
+			<div id='app'>
 				<Front />
-				<Navigation />
-				<AboutMe />
-				<Skills tools={tools} />
-				<Projects tools={tools} />
-				<Education />
-				<Experience />
-				<ContactMe URL={API_URL} />
+				<div id='sections'>
+					<Navigation />
+					<AboutMe />
+					<Skills tools={tools} />
+					<Projects tools={tools} />
+					<Education />
+					<Experience />
+					<ContactMe URL={API_URL} />
+				</div>
 			</div>
 		);
 	}
