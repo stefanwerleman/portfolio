@@ -14,6 +14,7 @@
 
 .link {
 	color: black;
+	margin-right: 10px;
 }
 
 /** Responsiveness */
@@ -52,13 +53,4 @@
 	#about {
 		padding-bottom: 150px;
 	}
-}
-
-/** Mobile Large */
-@media (max-width: 425px) {
-
-}
-
-/** Mobile Medium */
-@media (max-width: 375px) {
 }
