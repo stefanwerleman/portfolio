@@ -150,7 +150,7 @@ const projects = [
 		],
 		title: 'Constrained Topo Sort',
 		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
+			'Implemented a Java program that verifies whether an arbitrary directed graph has a valid topological ordering which some vertex, x, comes before some other vertex, y. Used multiple data structures from the Java API and Graph Theory to model this process.',
 		tools: ['java', 'linux'],
 	},
 	{
@@ -166,8 +166,8 @@ const projects = [
 		],
 		title: 'Run Like Hell',
 		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
-		tools: ['java', 'linux'],
+			'Implemented a Java, Python, and C version program that utilized Dynamic Programming to break down an inefficient recursive solution to an optimal solution.',
+		tools: ['python', 'c', 'java', 'linux'],
 	},
 	{
 		id: uuid(),
@@ -180,10 +180,10 @@ const projects = [
 				url: null,
 			},
 		],
-		title: 'Sneaky Rooks',
+		title: 'Sneaky Knights',
 		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
-		tools: ['c', 'linux'],
+			'Developed a Java and a Python program receives a list of coordinates and an arbitrarily large board for knights and determines whether any of the knights can attack one another. Developed an algorithm that converted the coordinate strings into indices for a 2D array and used a hash-table to cache and check each knight’s location',
+		tools: ['python', 'c', 'linux'],
 	},
 	{
 		id: uuid(),
@@ -198,8 +198,8 @@ const projects = [
 		],
 		title: 'Lonely Party Array',
 		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
-		tools: ['c', 'linux'],
+			'Developed a special array-like data structure in C and C++ that does not allocate any unused and wasted space like a typical array does. Utilized the GCC Valgrind tool to check for any memory leaks.',
+		tools: ['c', 'cpp', 'linux'],
 	},
 	{
 		id: uuid(),
@@ -214,24 +214,8 @@ const projects = [
 		],
 		title: 'Listy Strings',
 		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
-		tools: ['c', 'linux'],
-	},
-	{
-		id: uuid(),
-		number: count++,
-		links: [
-			{
-				github: null,
-			},
-			{
-				url: null,
-			},
-		],
-		title: 'Reflections and Kindred Spirits',
-		description:
-			'This website allows users to store information in the form of a note for it to be sent to recipients via email if an untimely death occurs. I developed the front end using JavaScript and the ReactJS framework. We used the SendGrid API to send the emails out to its recipients.',
-		tools: ['c', 'linux'],
+			'Made a C and C++ program that parses any string from an input file and produces a linked list of the characters in the string. This project focused on regex applications and dynamic memory management, so I used the GCC Valgrind tool to check for memory leaks.',
+		tools: ['cpp', 'c', 'linux'],
 	},
 ];
 
