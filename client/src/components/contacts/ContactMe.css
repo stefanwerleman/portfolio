@@ -9,3 +9,8 @@
 	color: white;
 	padding-bottom: 20%;
 }
+
+#contact-divider {
+	border-color: #3d58b8;
+	width: 75%;
+}

@@ -1,7 +1,5 @@
 import React from 'react';
-// import './Contact.css';
-
-import { Container } from 'react-bootstrap';
+import './Contact.css';
 
 class Contact extends React.Component {
 	render() {
@@ -13,9 +11,11 @@ class Contact extends React.Component {
 
 		return (
 			<div id='contact-item-container'>
-				<div id='contact-logo-container'>{logo}</div>
+				<div id='contact-logo-container'>
+					<h1 id='contact-logo'>{logo}</h1>
+				</div>
 				<div id='contact-type-container'>
-					<h6 id='contact-type'>{type}</h6>
+					<p id='contact-type'>{type}</p>
 					<a
 						id='contact-link'
 						href={getLink()}
