@@ -29,11 +29,12 @@ class AboutMe extends React.Component {
 							<br />
 							<br />I am a Senior at the University of Central
 							Florida majoring in Computer Science. I graduate in
-							Summer 2021 and am seeking a Software Engineering
-							internship. By obtaining an internship, I hope to
-							gain the experience and knowledge necessary to
-							provide optimal results at the company I work for in
-							my career. I am a very diligent and detail-oriented
+							August 2021 and am seeking a Software Engineering
+							entry-level or internship position. By obtaining an
+							software engineering role, I hope to gain the
+							experience and knowledge necessary to provide
+							optimal results at the company I work for in my
+							career. I am a very diligent and detail-oriented
 							individual that always strives to stay on the
 							cutting-edge of technology. I hope to bring these
 							qualities to an internship.

@@ -11,7 +11,7 @@ const jobs = [
 		date: 'May 2017 - Present',
 		location: 'Orlando, FL',
 		description:
-			'Perform auto detailing services on various vehicles and am responsible for the sales of detail services and products.',
+			'Currently have the highest customer satisfaction rate in auto detailing services and leading the company in membership sales. Received two employee of the month awards.',
 	},
 ];
 

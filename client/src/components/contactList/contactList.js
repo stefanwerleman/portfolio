@@ -9,7 +9,7 @@ const contacts = [
 		id: uuid(),
 		logo: <IoMdMail />,
 		type: 'Email',
-		link: 'stefanwerleman@yahoo.com',
+		link: 'stefanfwerleman@gmail.com',
 	},
 	{
 		id: uuid(),
