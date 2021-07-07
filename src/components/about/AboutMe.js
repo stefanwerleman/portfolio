@@ -27,17 +27,12 @@ class AboutMe extends React.Component {
 						<p id='about-text'>
 							<strong>Hello,</strong>
 							<br />
-							<br />I am a Senior at the University of Central
+							<br />I am an incoming graduate student at the University of Central
 							Florida majoring in Computer Science. I graduate in
-							August 2021 and am seeking a Software Engineering
-							entry-level or internship position. By obtaining an
-							software engineering role, I hope to gain the
-							experience and knowledge necessary to provide
-							optimal results at the company I work for in my
-							career. I am a very diligent and detail-oriented
-							individual that always strives to stay on the
-							cutting-edge of technology. I hope to bring these
-							qualities to an internship.
+							August 2022 and am seeking a Software Engineering
+							entry-level or internship position. I enjoy solving complex problems and turning
+							them into software that can help others. I am always striving to stay on the cutting-edge of technology by learning 
+							about the latest discoveries in Computer Science. 
 							<br />
 							<br />
 							If you are interested, you can view some of my{' '}
@@ -51,7 +46,7 @@ class AboutMe extends React.Component {
 									</Link>
 								</a>
 							</strong>{' '}
-							in down below and feel free to reach out to me on
+							down below and feel free to reach out to me on
 							LinkedIn or send me an{' '}
 							<strong>
 								<a href='#/contact'>

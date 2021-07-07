@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, Collapse, ButtonGroup } from 'react-bootstrap';
 import Project from '../project/Project';
 import projectList from '../projectObjects/projectObjects';
 import './Projects.css';
@@ -7,41 +6,10 @@ import './Projects.css';
 class Projects extends React.Component {
 	state = {
 		projects: projectList,
-		isExpanded: false,
-	};
-
-	handleExpand = () => {
-		this.setState({ isExpanded: true });
-	};
-
-	handleCollapse = () => {
-		this.setState({ isExpanded: false });
-	};
-
-	toggleButton = (isExpanded) => {
-		if (!isExpanded) {
-			return (
-				<Button
-					className='projectButton'
-					variant='primary'
-					onClick={this.handleExpand}>
-					Show More
-				</Button>
-			);
-		} else {
-			return (
-				<Button
-					className='projectButton'
-					variant='outline-primary'
-					onClick={this.handleCollapse}>
-					Show Less
-				</Button>
-			);
-		}
 	};
 
 	render() {
-		const { isExpanded, projects } = this.state;
+		const { projects } = this.state;
 
 		return (
 			<div id='projects' className='sectionContainer'>
@@ -69,13 +37,6 @@ class Projects extends React.Component {
 							/>
 						))}
 					</div>
-
-					{/* TODO: Fix this button */}
-					{/* <div id='button-container'>
-						<ButtonGroup id='button-group'>
-							{this.toggleButton(isExpanded)}
-						</ButtonGroup>
-					</div> */}
 				</div>
 			</div>
 		);
