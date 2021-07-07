@@ -1,3 +1,7 @@
+# Portfolio Version 1
+
+Here you'll find the source code for the 1st version of my portfolio.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
